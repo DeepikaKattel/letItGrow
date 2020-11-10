@@ -277,7 +277,7 @@ article .entry-content ol {display: block;margin: 10px 50px;list-style-type: cir
 /* ---------------------------------------------------------------------------- */
 /* ------------------------------------Footer---------------------------------- */
 /* ---------------------------------------------------------------------------- */
-footer#page-footer{background: #12191B;position: fixed;top: auto;bottom: 0;left: 0;width: 100%;display:block;}
+footer#page-footer{background: #4c6792 ;position: fixed;top: auto;bottom: 0;left: 0;width: 100%;display:block;}
 footer a{color:#999;font-weight: bold;text-shadow: none;}
 footer a:hover{color:#fff;}
 .widget-title{font-weight: bold;text-transform: uppercase;line-height: 1.38;margin-bottom: 20px;font-size: 14px;color: #eee;}

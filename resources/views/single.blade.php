@@ -73,32 +73,7 @@
 				</div>
 			</div>
 
-			<!---Top Menu--->
-			<div id="cssmenu" >
-				<ul>
-				   <li class="active"><a href="index.html"><span>zMatcha</span></a></li>
-				   <li class="has-sub"><a href="#"><span>Category</span></a>
-					  <ul>
-						 <li class="has-sub"><a href="#"><span>Item 1</span></a>
-							<ul>
-							   <li><a href="#"><span>Sub Item</span></a></li>
-							   <li class="last"><a href="#"><span>Sub Item</span></a></li>
-							</ul>
-						 </li>
-						 <li class="has-sub"><a href="#"><span>Item 2</span></a>
-							<ul>
-							   <li><a href="#"><span>Sub Item</span></a></li>
-							   <li class="last"><a href="#"><span>Sub Item</span></a></li>
-							</ul>
-						 </li>
-					  </ul>
-				   </li>
-				   <li><a href="archive.html"><span>Archive</span></a></li>
-				   <li><a href="single.html"><span>About</span></a></li>
-				   <li class="last"><a href="contact.html"><span>Contact</span></a></li>
-				</ul>
-			</div>
-
+			@include('header')
 		</div>
 	</header>
 
@@ -107,7 +82,7 @@
 		<div class="wrap-container zerogrid">
 			<div class="crumbs">
 				<ul>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="{{url('/')}}">Home</a></li>
 					<li><a href="single.html">About</a></li>
 				</ul>
 			</div>
@@ -115,189 +90,23 @@
 				<article class="post-entry single-post">
 					<div class="wrap-post">
 						<div class="entry-header">
-							<h1 class="entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing</h1>
-							<div class="entry-meta">
-								<a href="#"><i class="fa fa-calendar"></i> August 10, 2016</a>
-								<a href="#"><i class="fa fa-comments"></i> 1 Comment</a>
-								<a href="#"><i class="fa fa-tag"></i> Event, New</a>
-							</div>
+							<h1 class="entry-title">About The Company</h1>
 						</div>
-						<div class="post-thumbnail-wrap">
-							<img src="images/single.jpg" />
-						</div>
+
 						<div class="entry-content">
-							<div class="excerpt"><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum exercitation ullamco laboris nisi ut aliquip.</p></div>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-							<blockquote><p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet vultatup duista.</p></blockquote>
-							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril.</p>
-							<h2>Heading 1</h2>
-							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse lorem ipsum dolor sit amet.</p>
-							<h2>Heading 2</h2>
-							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. At vero eos et accusam et justo.</p>
-							<p><code>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</code></p>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-							<div class="note">
-							  <ol>
-								<li>Lorem ipsum</li>
-								<li>Sit amet vultatup nonumy</li>
-								<li>Duista sed diam</li>
-							  </ol>
-							  <div class="clear"></div>
-							</div>
-							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-						</div>
-					</div>
+							<div class="excerpt">
+							<p>Let IT grow Pvt. Ltd. is a company growing in the field of information technology. The organization is a team of driven young and experienced minds that are passionate to provide utmost customer satisfaction in terms of product and service delivery.
+                             The company mostly undertakes project-based business and primarily focuses on providing software-based services to its customers. However, it serves clients with system related services as well as other related needs. Apart from serving for commercial needs, Let IT grow also provides professional training to freshers/individuals and prepare them for the outer world exposure on the related field.
+                            As the name suggests, we aim to maximize the market potential in IT by providing excellent products and services in the related field along with generating skillful manpower.</p>
+
+					    </div>
 				</article>
-				<div class="zerogrid">
-					<div class="comments-are">
-						<div id="comment">
-							<h3>Leave a Reply</h3>
-							<span>Your email address will not be published. Required fields are marked </span>
-							<form name="form1" id="comment_form" method="post" action="">
-								<label>
-								<span>Comment:</span>
-								<textarea name="message" id="message"></textarea>
-								</label>
-								<label>
-								<span>Name:</span>
-								<input type="text"  name="name" id="name" required>
-								</label>
-								<label>
-								<span>Email:</span>
-								<input type="email"  name="email" id="email" required>
-								</label>
-								<center><input class="button button-skin " type="submit" name="SubmitComment" value="Submit"></center>
-							</form>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
 
 	<!--////////////////////////////////////Footer-->
-	<footer id="page-footer">
-		<div class="zerogrid wrap-footer">
-			<div class="row">
-				<div class="sm-1-4 col-footer-1">
-					<div class="wrap-col">
-						<h3 class="widget-title">About Us</h3>
-						<p>Ut volutpat consectetur aliquam. Curabitur auctor in nis ulum ornare. Metus elit vehicula dui. Curabitur auctor in nis ulum ornare. Sed consequat, augue condimentum fermentum</p>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udantium</p>
-					</div>
-				</div>
-				<div class="sm-1-4 col-footer-2">
-					<div class="wrap-col">
-						<h3 class="widget-title">Recent Post</h3>
-						<ul>
-							<li><a href="#">MOST VISITED COUNTRIES</a></li>
-							<li><a href="#">5 PLACES THAT MAKE A GREAT HOLIDAY</a></li>
-							<li><a href="#">PEBBLE TIME STEEL IS ON TRACK TO SHIP IN JULY</a></li>
-							<li><a href="#">STARTUP COMPANY???S CO-FOUNDER TALKS ON HIS NEW PRODUCT</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="sm-1-4 col-footer-3">
-					<div class="wrap-col">
-						<h3 class="widget-title">Tag Cloud</h3>
-						<a href="#">animals</a>
-						<a href="#">cooking</a>
-						<a href="#">countries</a>
-						<a href="#">city</a>
-						<a href="#">children</a>
-						<a href="#">home</a>
-						<a href="#">likes</a>
-						<a href="#">photo</a>
-						<a href="#">link</a>
-						<a href="#">law</a>
-						<a href="#">shopping</a>
-						<a href="#">skate</a>
-						<a href="#">scholl</a>
-						<a href="#">video</a>
-						<a href="#">travel</a>
-						<a href="#">images</a>
-						<a href="#">love</a>
-						<a href="#">lists</a>
-						<a href="#">makeup</a>
-						<a href="#">media</a>
-						<a href="#">password</a>
-						<a href="#">pagination</a>
-						<a href="#">wildlife</a>
-					</div>
-				</div>
-				<div class="sm-1-4 col-footer-4">
-					<div class="wrap-col">
-						<h3 class="widget-title">Gallery</h3>
-						<div class="row">
-							<div class="sm-1-3 xs-1-2">
-								<div class="wrap-col">
-									<a href="#"><img src="images/1.jpg"></a>
-								</div>
-							</div>
-							<div class="sm-1-3 xs-1-2">
-								<div class="wrap-col">
-									<a href="#"><img src="images/2.jpg"></a>
-								</div>
-							</div>
-							<div class="sm-1-3 xs-1-2">
-								<div class="wrap-col">
-									<a href="#"><img src="images/3.jpg"></a>
-								</div>
-							</div>
-							<div class="sm-1-3 xs-1-2">
-								<div class="wrap-col">
-									<a href="#"><img src="images/4.jpg"></a>
-								</div>
-							</div>
-							<div class="sm-1-3 xs-1-2">
-								<div class="wrap-col">
-									<a href="#"><img src="images/5.jpg"></a>
-								</div>
-							</div>
-							<div class="sm-1-3 xs-1-2">
-								<div class="wrap-col">
-									<a href="#"><img src="images/6.jpg"></a>
-								</div>
-							</div>
-							<div class="sm-1-3 xs-1-2">
-								<div class="wrap-col">
-									<a href="#"><img src="images/7.jpg"></a>
-								</div>
-							</div>
-							<div class="sm-1-3 xs-1-2">
-								<div class="wrap-col">
-									<a href="#"><img src="images/8.jpg"></a>
-								</div>
-							</div>
-							<div class="sm-1-3 xs-1-2">
-								<div class="wrap-col">
-									<a href="#"><img src="images/1.jpg"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="zerogrid bottom-footer">
-			<div class="row">
-				<div class="bottom-social">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-google-plus"></i></a>
-					<a href="#"><i class="fa fa-pinterest"></i></a>
-					<a href="#"><i class="fa fa-vimeo"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-youtube"></i></a>
-				</div>
-			</div>
-			<div class="copyright">
-				Copyright @ - <a href="https://www.zerotheme.com" title="free html5 templates">Html5 Templates</a> by Zerotheme
-			</div>
-		</div>
-	</footer>
-
+	@include('footer')
 
 	<!-- ========== Scripts ========== -->
 	<script src="js/jquery-3.1.1.min.js"></script>
