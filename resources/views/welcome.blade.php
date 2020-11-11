@@ -8,7 +8,7 @@
     <!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>zMatcha - Free Html5 Templates</title>
+	<title>Let IT Grow | It Services</title>
 	<meta name="description" content="Free Responsive Html5 Css3 Templates | zerotheme.com">
 	<meta name="author" content="https://www.zerotheme.com">
 
@@ -33,10 +33,12 @@
 
 	<!-- Custom Fonts -->
 	<link href="{{asset('font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Owl Carousel Assets -->
     <link href="{{asset('owl-carousel/owl.carousel.css')}}" rel="stylesheet">
     <!-- <link href="{{asset('owl-carousel/owl.theme.css')}}" rel="stylesheet"> -->
+    <link href="{{asset('css/quoteCarousel.css')}}" rel="stylesheet">
 
      <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
@@ -71,7 +73,7 @@
 					  <div class="hero-content">
 						<h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s">We build designs from your imagination</h4>
 						<h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s">Let IT Grow</h1>
-						<a href="{{asset('single')}}" class="button button-skin wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Read More</a>
+						<a href="{{asset('about')}}" class="button button-skin wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Read More</a>
 					  </div>
 					</div>
 					<!---Scroller--->
@@ -94,85 +96,7 @@
 	<!--////////////////////////////////////Container-->
 	<section id="page-content" class="index-page">
 		<div class="wrap-container">
-			<!-----------------content-box-1-------------------->
-			<section class="content-box box-1">
-				<div class="zerogrid">
-					<div class="wrap-box"><!--Start Box-->
-						<div class="header wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1s">
-							<h2>Our Aim</h2>
-							<span class="intro">Lorem ipsum dolor sit amet consectetur adipisicing</span>
-						</div>
-						<div class="content">
-							<div class="row">
-								<div class="lg-1-3 wow fadeInLeft" data-wow-duration=".8s">
-									<div class="ft-item">
-										<div class="ft-icon">
 
-										</div>
-										<h5>20 Years Experience</h5>
-										<p>Quae delectus cumque, tempore explicabo odit beatae! Nesciunt tempora cum consequuntur.</p>
-									</div>
-									<div class="ft-item">
-										<div class="ft-icon">
-
-										</div>
-										<h5>License & Insurance</h5>
-										<p>Quae delectus cumque, tempore explicabo odit beatae! Nesciunt tempora cum consequuntur.</p>
-									</div>
-									<div class="ft-item">
-										<div class="ft-icon">
-
-										</div>
-										<h5>Excellent Services</h5>
-										<p>Quae delectus cumque, tempore explicabo odit beatae! Nesciunt tempora cum consequuntur.</p>
-									</div>
-								</div>
-								<div class="lg-1-3">
-									<img src="{{asset('images/UK-Plant2.png')}}" alt="" class="ft-image-center wow fadeInUp has-tip" data-wow-delay=".1s" data-wow-duration="1s" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="0" title="Services!"/>
-								</div>
-								<div class="lg-1-3 t-right-xs wow fadeInRight" data-wow-duration=".8s">
-									<div class="ft-item">
-										<div class="ft-icon">
-
-										</div>
-										<h5>Best Experts</h5>
-										<p>Quae delectus cumque, tempore explicabo odit beatae! Nesciunt tempora cum consequuntur.</p>
-									</div>
-									<div class="ft-item">
-										<div class="ft-icon">
-
-										</div>
-										<h5>Happy Customers</h5>
-										<p>Quae delectus cumque, tempore explicabo odit beatae! Nesciunt tempora cum consequuntur.</p>
-									</div>
-									<div class="ft-item">
-										<div class="ft-icon">
-
-										</div>
-										<h5>Accountable Firm</h5>
-										<p>Quae delectus cumque, tempore explicabo odit beatae! Nesciunt tempora cum consequuntur.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-----------------content-box-2-------------------->
-			<section class="content-box box-2 box-style-2">
-				<div class="zerogrid">
-					<div class="wrap-box"><!--Start Box-->
-						<div class="content wow fadeInLeft" data-wow-delay=".1s" data-wow-duration="1s">
-							<div class="row">
-								<div class="sm-1-2 offset-sm-2-4">
-									<blockquote><p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet vultatup duista.</p></blockquote>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 
 
 
@@ -196,7 +120,7 @@
 												</div>
 
 												<div class="project-button">
-													<a href="{{asset('single')}}" class="button button-skin">Read More</a>
+													<a href="{{asset('about')}}" class="button button-skin">Read More</a>
 												</div>
 											</div>
 										</div>
@@ -215,7 +139,7 @@
 												</div>
 
 												<div class="project-button">
-													<a href="{{route('single')}}" class="button button-skin">Read More</a>
+													<a href="{{route('about')}}" class="button button-skin">Read More</a>
 												</div>
 											</div>
 										</div>
@@ -233,7 +157,7 @@
 													Professional IT Training Services
 												</div>
 												<div class="project-button">
-													<a href="{{route('single')}}" class="button button-skin">Read More</a>
+													<a href="{{route('about')}}" class="button button-skin">Read More</a>
 												</div>
 											</div>
 										</div>
@@ -251,7 +175,7 @@
 													Web Design
 												</div>
 												<div class="project-button">
-													<a href="{{route('single')}}" class="button button-skin">Read More</a>
+													<a href="{{route('about')}}" class="button button-skin">Read More</a>
 												</div>
 											</div>
 										</div>
@@ -275,30 +199,110 @@
 						<div class="content wow fadeInLeft" data-wow-delay=".1s" data-wow-duration="1s">
 							<div class="clients-logo">
 								<div id="owl-brand" class="owl-carousel">
-									<div class="item">
-										<img src="{{asset('images/b1.png')}}" alt="">
-									</div>
-									<div class="item">
-										<img src="{{asset('images/b2.png')}}" alt="">
-									</div>
-									<div class="item">
-										<img src="{{asset('images/b3.png')}}" alt="">
-									</div>
-									<div class="item">
-										<img src="{{asset('images/b4.png')}}" alt="">
-									</div>
-									<div class="item">
-										<img src="{{asset('images/b5.png')}}" alt="">
-									</div>
-									<div class="item">
-										<img src="{{asset('images/b6.png')}}" alt="">
-									</div>
-									<div class="item">
-										<img src="{{asset('images/b7.png')}}" alt="">
-									</div>
-									<div class="item">
-										<img src="{{asset('images/b8.png')}}" alt="">
-									</div>
+									<div class="item" style="padding-left:10px">
+                                        <div class="card col-md-3 col-11">
+                                            <div class="card-content">
+                                                <div class="card-body p-0">
+                                                    <div class="profile mb-4 mt-3"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"> </div>
+                                                    <div class="card-subtitle">
+                                                        <p style="color:white"> <small class="text-muted"><i class="fa fa-quote-left" style="margin-right:5px"></i>I expected anything less than perfect for the team of experts. They are the best team ever! <i class="fa fa-quote-left fa-flip-horizontal" style="margin-left:5px"></i> </small> </p>
+                                                        <p style="color:white">-CEO</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" style="padding-left:10px">
+                                        <div class="card col-md-3 col-11">
+                                            <div class="card-content">
+                                                <div class="card-body p-0">
+                                                    <div class="profile mb-4 mt-3"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"> </div>
+                                                    <div class="card-subtitle">
+                                                        <p style="color:white"> <small class="text-muted"><i class="fa fa-quote-left" style="margin-right:5px"></i>I expected anything less than perfect for the team of experts. They are the best team ever! <i class="fa fa-quote-left fa-flip-horizontal" style="margin-left:5px"></i> </small> </p>
+                                                        <p style="color:white">-CEO</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" style="padding-left:10px">
+                                        <div class="card col-md-3 col-11">
+                                            <div class="card-content">
+                                                <div class="card-body p-0">
+                                                    <div class="profile mb-4 mt-3"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"> </div>
+                                                    <div class="card-subtitle">
+                                                        <p style="color:white"> <small class="text-muted"><i class="fa fa-quote-left" style="margin-right:5px"></i>I expected anything less than perfect for the team of experts. They are the best team ever! <i class="fa fa-quote-left fa-flip-horizontal" style="margin-left:5px"></i> </small> </p>
+                                                        <p style="color:white">-CEO</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" style="padding-left:10px">
+                                        <div class="card col-md-3 col-11">
+                                            <div class="card-content">
+                                                <div class="card-body p-0">
+                                                    <div class="profile mb-4 mt-3"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"> </div>
+                                                    <div class="card-subtitle">
+                                                        <p style="color:white"> <small class="text-muted"><i class="fa fa-quote-left" style="margin-right:5px"></i>I expected anything less than perfect for the team of experts. They are the best team ever! <i class="fa fa-quote-left fa-flip-horizontal" style="margin-left:5px"></i> </small> </p>
+                                                        <p style="color:white">-CEO</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="item" style="padding-left:10px">
+                                        <div class="card col-md-3 col-11">
+                                            <div class="card-content">
+                                                <div class="card-body p-0">
+                                                    <div class="profile mb-4 mt-3"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"> </div>
+                                                    <div class="card-subtitle">
+                                                        <p style="color:white"> <small class="text-muted"><i class="fa fa-quote-left" style="margin-right:5px"></i>I expected anything less than perfect for the team of experts. They are the best team ever! <i class="fa fa-quote-left fa-flip-horizontal" style="margin-left:5px"></i> </small> </p>
+                                                        <p style="color:white">-CEO</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" style="padding-left:10px">
+                                        <div class="card col-md-3 col-11">
+                                            <div class="card-content">
+                                                <div class="card-body p-0">
+                                                    <div class="profile mb-4 mt-3"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"> </div>
+                                                    <div class="card-subtitle">
+                                                        <p style="color:white"> <small class="text-muted"><i class="fa fa-quote-left" style="margin-right:5px"></i>I expected anything less than perfect for the team of experts. They are the best team ever! <i class="fa fa-quote-left fa-flip-horizontal" style="margin-left:5px"></i> </small> </p>
+                                                        <p style="color:white">-CEO</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" style="padding-left:10px">
+                                        <div class="card col-md-3 col-11">
+                                            <div class="card-content">
+                                                <div class="card-body p-0">
+                                                    <div class="profile mb-4 mt-3"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"> </div>
+                                                    <div class="card-subtitle">
+                                                        <p style="color:white"> <small class="text-muted"><i class="fa fa-quote-left" style="margin-right:5px"></i>I expected anything less than perfect for the team of experts. They are the best team ever! <i class="fa fa-quote-left fa-flip-horizontal" style="margin-left:5px"></i> </small> </p>
+                                                        <p style="color:white">-CEO</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" style="padding-left:10px">
+                                        <div class="card col-md-3 col-11">
+                                            <div class="card-content">
+                                                <div class="card-body p-0">
+                                                    <div class="profile mb-4 mt-3"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"> </div>
+                                                    <div class="card-subtitle">
+                                                        <p style="color:white"> <small class="text-muted"><i class="fa fa-quote-left" style="margin-right:5px"></i>I expected anything less than perfect for the team of experts. They are the best team ever! <i class="fa fa-quote-left fa-flip-horizontal" style="margin-left:5px"></i> </small> </p>
+                                                        <p style="color:white">-CEO</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 								</div>
 							</div>
 						</div>
@@ -320,7 +324,7 @@
 											</div>
 											<div class="sm-2-3 t-left-sm">
 												<h3>Address</h3>
-												<p>123, New Lenox Chicago, IL 60606</p>
+												<p>Pulchowk, Lalitpur</p>
 											</div>
 										</div>
 									</div>
@@ -333,7 +337,7 @@
 											</div>
 											<div class="sm-2-3 t-left-sm">
 												<h3>Phone</h3>
-												<p>Carteret NJ 0708 (732) 803-01 03, (732) 806-01 04</p>
+												<p>01-5901614</p>
 											</div>
 										</div>
 									</div>
@@ -346,7 +350,7 @@
 											</div>
 											<div class="sm-2-3 t-left-sm">
 												<h3>Email</h3>
-												<p><span>Email One :</span> info@yoursite.com </p>
+												<p><span>Email One :</span> info@letitgrownepal.com </p>
 											</div>
 										</div>
 									</div>
@@ -454,8 +458,8 @@ thing("Yo.");
     These are the variable definitions for the values that will be used
     throughout the rest of the script.
     */
-    var canvas_width = 1200; //Needs to be a multiple of the resolution value below.
-    var canvas_height = 900; //This too.
+    var canvas_width = 800; //Needs to be a multiple of the resolution value below.
+    var canvas_height = 650; //This too.
 
     var resolution = 10; //Width and height of each cell in the grid.
 
@@ -1020,7 +1024,6 @@ window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequ
 //And this line calls the init() function defined above to start the script.
 Fluid.initialize();
 </script>
-
 </div>
 </body>
 </html>

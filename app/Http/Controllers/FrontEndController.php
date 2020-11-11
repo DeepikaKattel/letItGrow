@@ -13,7 +13,7 @@ class FrontEndController extends Controller
      */
     public function about()
     {
-        return view('single');
+        return view('about');
     }
 
     /**

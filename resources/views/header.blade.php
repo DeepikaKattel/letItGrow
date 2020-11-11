@@ -1,8 +1,8 @@
 <!---Top Menu--->
     <div id="cssmenu" >
         <ul>
-           <li class="active"><a href="{{url('/')}}"><span>zMatcha</span></a></li>
-           <li class="has-sub"><a href="#"><span>Category</span></a>
+           <li class="active"><a href="{{url('/')}}"><span>Let IT Grow</span></a></li>
+           {{--<li class="has-sub"><a href="#"><span>Category</span></a>
               <ul>
                  <li class="has-sub"><a href="#"><span>Item 1</span></a>
                     <ul>
@@ -17,9 +17,8 @@
                     </ul>
                  </li>
               </ul>
-           </li>
-           <li><a href="{{asset('archive.html')}}"><span>Archive</span></a></li>
-           <li><a href="{{asset('single')}}"><span>About</span></a></li>
+           </li>--}}
+           <li><a href="{{asset('about')}}"><span>About</span></a></li>
            <li class="last"><a href="{{asset('contact.html')}}"><span>Contact</span></a></li>
            @if (Route::has('login'))
                @auth

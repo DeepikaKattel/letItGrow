@@ -13,7 +13,7 @@
 				</div>
 			</div>
 			<div class="copyright">
-				Copyright @ - <a href="https://www.zerotheme.com/free-website-templates" rel='nofollow'>Website Templates</a> by <a href="https://www.zerotheme.com">Zerotheme</a>
+				Copyright @ - <a href="http://letitgrownepal.com/" rel='nofollow'>Let IT Grow</a>
 			</div>
 		</div>
 	</footer>
