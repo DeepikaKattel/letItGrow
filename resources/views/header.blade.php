@@ -18,8 +18,8 @@
                  </li>
               </ul>
            </li>--}}
-           <li><a href="{{asset('about')}}"><span>About</span></a></li>
-           <li class="last"><a href="{{asset('contact.html')}}"><span>Contact</span></a></li>
+           <li><a href="{{route('about')}}"><span>About</span></a></li>
+           <li class="last"><a href="{{route('contact')}}"><span>Contact</span></a></li>
            @if (Route::has('login'))
                @auth
                    <li><a href="{{ url('/home') }}"><span>Home</span></a></li>
