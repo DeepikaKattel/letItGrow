@@ -62,6 +62,43 @@
                   </span>
               @enderror
             </div>
+            <div class="field-wrap">
+              <label>
+                Company Name<span class="req">*</span>
+              </label>
+              <input id="company_name" type="text" class="form-control @error('company_name') is-invalid @enderror" name="company_name" value="{{ old('company_name') }}" required autocomplete="company_name" autofocus>
+              @error('company_name')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
+            </div>
+          </div>
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                Designation<span class="req">*</span>
+              </label>
+              <input id="designation" type="text" class="form-control @error('designation') is-invalid @enderror" name="designation" value="{{ old('designation') }}" required autocomplete="designation" autofocus>
+              @error('designation')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
+            </div>
+
+            <div class="field-wrap">
+              <label>
+                Company Type<span class="req">*</span>
+              </label>
+              <input id="company_type" type="text" class="form-control @error('company_type') is-invalid @enderror" name="company_type" value="{{ old('company_type') }}" required autocomplete="company_type" autofocus>
+              @error('company_type')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
+            </div>
+          </div>
 
             <div class="field-wrap">
               <label>
@@ -75,31 +112,33 @@
                   </span>
               @enderror
             </div>
-          </div>
 
-          <div class="field-wrap">
-            <label>
-              Password<span class="req">*</span>
-            </label>
-            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+          <div class="top-row">
+              <div class="field-wrap">
+                <label>
+                  Password<span class="req">*</span>
+                </label>
+                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
-            @error('password')
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-          </div>
+                @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+              </div>
 
-          <div class="field-wrap">
-            <label>
-              Confirm Password<span class="req">*</span>
-            </label>
-            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+              <div class="field-wrap">
+                <label>
+                  Confirm Password<span class="req">*</span>
+                </label>
+                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+              </div>
           </div>
 
           <button type="submit" class="btn button button-block"/>Register</button>
 
           </form>
+
 
         </div>
 
