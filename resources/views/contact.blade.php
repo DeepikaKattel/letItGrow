@@ -149,20 +149,37 @@
 						<div class="sm-2-5 offset-sm-1-5">
 							<div class="wrap-col">
 								<div id="contact_form" class="wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+                                    @if (\Illuminate\Support\Facades\Session::has('error'))
+                                        <div class="alert alert-danger" style="background-color:red;color:white">
+                                            {!! session('error') !!}
+                                        </div>
+                                    @endif
+                                    @if (\Illuminate\Support\Facades\Session::has('success'))
+                                        <div class="alert alert-success" style="background-color:green;color:white">
+                                            {!! session('success') !!}
+                                        </div>
+                                    @endif
 									<div id="contact_results"></div>
 									<div id="contact_body">
-										<label>
-											<input type="text" name="name" id="name" required="true" placeholder="Your Name"/>
-										</label>
-										<label>
-											<input type="email" name="email" required="true" placeholder="Your Email"/>
-										</label>
-										<label for="field5">
-											<textarea name="message" id="message" class="textarea-field" required="true" placeholder="Message"></textarea>
-										</label>
-										<label>
-											<button class="button button-skin" type="submit" id="submit_btn">Submit</button>
-										</label>
+                                        <form action="{{route('contact.store')}}" method="post" >
+                                        @csrf
+                                            <label>
+                                                <input type="text" name="name" id="name" required="true" placeholder="Your Name"/>
+                                            </label>
+                                            <label>
+                                                <input type="email" name="email" required="true" placeholder="Your Email"/>
+                                            </label>
+                                            <label for="field5">
+                                                <textarea name="message" id="message" class="textarea-field" required="true" placeholder="Message"></textarea>
+                                            </label>
+
+                                            <label>Upload your CV:
+                                                <input type="file" name="cv" id="cv"/>
+                                            </label>
+                                            <label>
+                                                <button class="button button-skin" type="submit" id="submit_btn">Submit</button>
+                                            </label>
+                                        </form>
 									</div>
 								</div>
 							</div>
@@ -217,10 +234,8 @@ $(document).ready(function() {
             post_data = {
 				'user_name'		: $('input[name=name]').val(),
 				'user_email'	: $('input[name=email]').val(),
-				'country_code'	: $('input[name=phone1]').val(),
-				'phone_number'	: $('input[name=phone2]').val(),
-				'subject'		: $('select[name=subject]').val(),
-				'msg'			: $('textarea[name=message]').val()
+				'msg'			: $('textarea[name=message]').val(),
+				'cv'			: $('input[name=cv]').val()
 			};
 
             //Ajax post data to server

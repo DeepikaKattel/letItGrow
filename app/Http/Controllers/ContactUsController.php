@@ -35,7 +35,25 @@ class ContactUsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $contact = new ContactUs();
+        $contact->name = request('name');
+        $contact->email = request('email');
+        $contact->message = request('message');
+        if ($request->hasFile('cv')) {
+            $cv = $request->cv;
+            $fileName = rand() . "." . $cv->getClientOriginalExtension();
+            $destination_path = public_path("contactCV/");
+            $cv->move($destination_path, $fileName);
+            $contact->cv = 'contactCV/' . $fileName;
+        }
+        $contact->save();
+        $contactsave = $contact->save();
+        if ($contactsave) {
+            return redirect()->back()->with("success", "The record has been stored");
+        } else {
+            return redirect()->back()->with("error", "There is an error");
+        }
+
     }
 
     /**
