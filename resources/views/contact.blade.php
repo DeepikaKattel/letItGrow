@@ -100,7 +100,7 @@
                                     @endif
 									<div id="contact_results"></div>
 									<div id="contact_body">
-                                        <form action="{{route('contact.store')}}" method="post" >
+                                        <form action="{{route('contact.store')}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                             <label>
                                                 <input type="text" name="name" id="name" required="true" placeholder="Your Name"/>
@@ -112,11 +112,10 @@
                                             <label for="field5">
                                                 <textarea name="message" id="message" class="textarea-field" required="true" placeholder="Message"></textarea>
                                             </label>
-
                                              <label>Upload CV:</label>
-                                             <input type="file" name="cv" required="true">
+                                             <input type="file" name="contact_cv" id="contact_cv" required="true">
                                              <label>
-                                             <button class="button button-skin" type="submit">Submit</button>
+                                             <button class="button button-skin">Submit</button>
                                             </label>
                                         </form>
 									</div>

@@ -11,6 +11,6 @@ class ContactUs extends Model
     use HasFactory, Notifiable;
     protected $table = 'contact_us';
     protected $fillable = [
-        'name', 'email', 'message', 'cv'
+        'name', 'email', 'message', 'contact_cv'
     ];
 }
