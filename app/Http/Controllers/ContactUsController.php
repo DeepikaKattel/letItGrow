@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\ContactUs;
 use Illuminate\Http\Request;
 
+
 class ContactUsController extends Controller
 {
     /**
@@ -47,8 +48,8 @@ class ContactUsController extends Controller
             $contact->cv = 'contactCV/' . $fileName;
         }
         $contact->save();
-        $contactsave = $contact->save();
-        if ($contactsave) {
+        $contactSave = $contact->save();
+        if ($contactSave) {
             return redirect()->back()->with("success", "The record has been stored");
         } else {
             return redirect()->back()->with("error", "There is an error");

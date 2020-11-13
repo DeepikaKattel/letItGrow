@@ -9,7 +9,7 @@
   ================================================== -->
 	<meta charset="utf-8">
 	<title>Let IT Grow | It Services</title>
-	<meta name="description" content="Free Responsive Html5 Css3 Templates | zerotheme.com">
+	<meta name="description" content="Let IT Grow">
 	<meta name="author" content="https://www.zerotheme.com">
 
     <!-- Mobile Specific Metas
@@ -88,7 +88,7 @@
 				</div>
 			</div>
 			<canvas id="c"></canvas>
-			@include('header')
+			@include('partials.header')
 		</div>
 	</header>
 
@@ -96,10 +96,6 @@
 	<!--////////////////////////////////////Container-->
 	<section id="page-content" class="index-page">
 		<div class="wrap-container">
-
-
-
-
 			<!-----------------content-box-4-------------------->
 			<section class="content-box box-4" style="margin-bottom:100px">
 				<div class="zerogrid-fluid">
@@ -365,7 +361,7 @@
 		</div>
 	</section>
 
-    @include('footer')
+    @include('partials.footer')
 	<div id="page-top"><a href="#page-top" class="button button-toTop f-right"><i class="fa fa-angle-double-up"></i></a></div>
 
 	<!-- ========== Scripts ========== -->
