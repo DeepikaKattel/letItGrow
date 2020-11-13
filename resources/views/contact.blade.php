@@ -108,12 +108,13 @@
                                             <label>
                                                 <input type="email" name="email" required="true" placeholder="Your Email"/>
                                             </label>
+
                                             <label for="field5">
                                                 <textarea name="message" id="message" class="textarea-field" required="true" placeholder="Message"></textarea>
                                             </label>
 
                                              <label>Upload CV:</label>
-                                             <input type="file" name="cv" id="cv" required="true">
+                                             <input type="file" name="cv" required="true">
                                              <label>
                                              <button class="button button-skin" type="submit">Submit</button>
                                             </label>

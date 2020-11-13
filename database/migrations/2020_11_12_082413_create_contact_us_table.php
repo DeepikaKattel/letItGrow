@@ -18,7 +18,7 @@ class CreateContactUsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->longText('message');
-            $table->string('cv');
+            $table->string('cv')->nullable();
             $table->timestamps();
         });
     }

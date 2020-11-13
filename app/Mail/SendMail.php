@@ -16,9 +16,10 @@ class SendMail extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public $data;
+    public function __construct($contactMessage)
     {
-        //
+        $this->data;
     }
 
     /**
@@ -28,6 +29,7 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->subject('Someone Wants to Contact')
+            ->view('mail.contact',compact($this));
     }
 }

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\SendMail;
 use App\Models\ContactUs;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 
 class ContactUsController extends Controller
@@ -50,6 +52,18 @@ class ContactUsController extends Controller
         $contact->save();
         $contactSave = $contact->save();
         if ($contactSave) {
+            $data = array(
+                'name' => $request['name'],
+                'email' => $request['email'],
+                'message' =>$request['message'],
+            );
+            $contactMessage = [
+                'title' => 'Let IT Grow',
+                'body' => 'Someone Wants to Contact.'
+            ];
+            $message = new SendMail($contactMessage);
+
+            Mail::to("info@letitgrownepal.com")->send($message);
             return redirect()->back()->with("success", "The record has been stored");
         } else {
             return redirect()->back()->with("error", "There is an error");
