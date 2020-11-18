@@ -56,7 +56,7 @@
 		<script src="{{asset('js/html5.js')}}"></script>
 		<script src="{{asset('js/css3-mediaqueries.js')}}"></script>
 	<![endif]-->
-	<style>
+    {--<style>
 	html {
     	background-color: hsla(200,40%,30%,.4);
     	background-repeat: repeat-x;
@@ -86,7 +86,7 @@
     			400px 0;
     		}
     	}
-    	</style>
+    	</style>--}
 
 </head>
 <body id="page-top">
@@ -103,6 +103,7 @@
 					<div class="hero-content-wrapper">
 					  <div class="hero-content">
 						<h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4>
+						<img src={{asset('images/logo.png')}} style="height:200px;width:250px"/>
 						<h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s"> <canvas id="myCanvas" style="margin-top:0px"></canvas></h1>
 						<a href="{{asset('about')}}" class="button button-skin wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Read More</a>
 					  </div>
