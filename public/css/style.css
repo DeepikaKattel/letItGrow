@@ -108,7 +108,7 @@ header .main-header{position: relative;height: 100vh;
         1000px,
         400px 260px;
     animation: 50s para infinite linear;
-    background:url(../images/computer.jpg),url(../images/backgroundWelcom.jpg) center center;
+    background:url(../images/backgroundWelcom.jpg) center center;
     background-size: cover;}
 
 .main-header .bg-overlay{position: absolute;background: rgba(45, 50, 56, 0.4);width: 100%;height: 100%;top: 0;left: 0;}

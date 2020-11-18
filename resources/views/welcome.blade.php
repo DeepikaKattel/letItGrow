@@ -40,7 +40,9 @@
     <!-- <link href="{{asset('owl-carousel/owl.theme.css')}}" rel="stylesheet"> -->
     <link href="{{asset('css/quoteCarousel.css')}}" rel="stylesheet">
 
-     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
 
 	<!-- JS -->
@@ -60,6 +62,7 @@
 	html {
     	background-color: hsla(200,40%,30%,.4);
     	background-repeat: repeat-x;
+    	background-image:url(../images/computer.jpg);
     	background-position:
     		0 20%,
     		0 100%,
@@ -101,8 +104,8 @@
 					<!---Hero Content--->
 					<div class="hero-content-wrapper">
 					  <div class="hero-content">
-						<h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s">We build designs from your imagination</h4>
-						<h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s">Let IT Grow</h1>
+						<h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4>
+						<h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s"> <canvas id="myCanvas" style="margin-top:0px"></canvas></h1>
 						<a href="{{asset('about')}}" class="button button-skin wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Read More</a>
 					  </div>
 					</div>
@@ -118,6 +121,7 @@
 				</div>
 			</div>
 			<canvas id="c"></canvas>
+
 			@include('partials.header')
 		</div>
 	</header>
@@ -412,7 +416,22 @@
 
 	<!-- Definity JS -->
 	<script src="{{asset('js/main.js')}}"></script>
-
+	<!--Animation text-->
+	 <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+     <script type="text/javascript" src="main.js"></script>
+<script>
+    var red = [0, 100, 63];
+    var orange = [40, 100, 60];
+    var green = [75, 100, 40];
+    var blue = [196, 77, 55];
+    var purple = [280, 50, 60];
+    var silver = [0, 0, 63];
+    var myName = "Let IT Grow";
+    bubbleShape = "square";
+    var bubbleShape_width = '500px';
+    drawName(myName,  white);
+    bounceBubbles();
+</script>
 <script>
 /*
 Comments were requested, here we go :)
