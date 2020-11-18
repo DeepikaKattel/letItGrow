@@ -23,7 +23,7 @@
            <li class="last"><a href="{{route('contact')}}"><span>Contact</span></a></li>
            @if (Route::has('login'))
                @auth
-                   <li><a href="{{ url('/home') }}"><span>Home</span></a></li>
+                    <li><a href="{{ url('/home') }}"><span>{{Auth::user()->name}}</span></a></li>
                @else
                    <li><a href="{{ route('login') }}"><span>Login</span></a></li>
 

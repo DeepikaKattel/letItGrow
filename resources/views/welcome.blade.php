@@ -40,8 +40,6 @@
     <!-- <link href="{{asset('owl-carousel/owl.theme.css')}}" rel="stylesheet"> -->
     <link href="{{asset('css/quoteCarousel.css')}}" rel="stylesheet">
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
 
@@ -416,22 +414,8 @@
 
 	<!-- Definity JS -->
 	<script src="{{asset('js/main.js')}}"></script>
-	<!--Animation text-->
-	 <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
-     <script type="text/javascript" src="main.js"></script>
-<script>
-    var red = [0, 100, 63];
-    var orange = [40, 100, 60];
-    var green = [75, 100, 40];
-    var blue = [196, 77, 55];
-    var purple = [280, 50, 60];
-    var silver = [0, 0, 63];
-    var myName = "Let IT Grow";
-    bubbleShape = "square";
-    var bubbleShape_width = '500px';
-    drawName(myName,  white);
-    bounceBubbles();
-</script>
+
+
 <script>
 /*
 Comments were requested, here we go :)
