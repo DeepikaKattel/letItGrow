@@ -112,11 +112,9 @@
                                             <label for="field5">
                                                 <textarea name="message" id="message" class="textarea-field" required="true" placeholder="Message"></textarea>
                                             </label>
-                                             <label>Upload CV:</label>
-                                             <input type="file" name="contact_cv" id="contact_cv" required="true">
-                                             <label>
+
                                              <button class="button button-skin">Submit</button>
-                                            </label>
+
                                         </form>
 									</div>
 								</div>

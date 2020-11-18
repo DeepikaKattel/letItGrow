@@ -23,3 +23,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/about', [App\Http\Controllers\FrontEndController::class, 'about'])->name('about');
 Route::get('/contact', [App\Http\Controllers\FrontEndController::class, 'contact'])->name('contact');
 Route::post('/contactStore', [App\Http\Controllers\ContactUsController::class, 'store'])->name('contact.store');
+
+Route::get('/career', [App\Http\Controllers\FrontEndController::class, 'career'])->name('career');
+Route::resource('careers','App\Http\Controllers\CareerController');

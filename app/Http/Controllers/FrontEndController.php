@@ -21,6 +21,11 @@ class FrontEndController extends Controller
         return view('contact');
     }
 
+    public function career()
+    {
+        return view('careers');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

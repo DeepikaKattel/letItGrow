@@ -6,8 +6,6 @@ use App\Mail\SendMail;
 use App\Models\ContactUs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use League\CommonMark\Inline\Element\Image;
-
 
 class ContactUsController extends Controller
 {
@@ -43,13 +41,6 @@ class ContactUsController extends Controller
         $contact->name = request('name');
         $contact->email = request('email');
         $contact->message = request('message');
-        if ($request->hasFile('contact_cv')) {
-            $contact_cv = $request->contact_cv;
-            $fileName = $contact->name . "." . rand() . "." . $contact_cv->getClientOriginalExtension();
-            $destination_path = public_path("contactCV/");
-            $contact_cv->move($destination_path, $fileName);
-            $contact->contact_cv = 'contactCV/' . $fileName;
-        }
         $contact->save();
         $contactSave = $contact->save();
         if ($contactSave) {
@@ -57,7 +48,6 @@ class ContactUsController extends Controller
                 'name' => $request['name'],
                 'email' => $request['email'],
                 'message' =>$request['message'],
-                'cv'=>$request->file('cv'),
             );
             $contactMessage = [
                 'title' => 'Let IT Grow',
@@ -69,7 +59,6 @@ class ContactUsController extends Controller
         } else {
             return redirect()->back()->with("error", "There is an error");
         }
-
     }
 
     /**

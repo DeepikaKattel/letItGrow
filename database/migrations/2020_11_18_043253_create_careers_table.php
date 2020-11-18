@@ -16,9 +16,10 @@ class CreateCareersTable extends Migration
         Schema::create('careers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('email')->unique();
             $table->string('address');
             $table->string('phoneNumber');
-            $table->string('');
+            $table->string('cv')->nullable();
             $table->timestamps();
         });
     }
