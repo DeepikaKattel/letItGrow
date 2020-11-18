@@ -5,6 +5,7 @@
 	    table td{
 	        padding:20px;
 	    }
+
 	</style>
 	<header>
 		<div class="wrap-header" >
@@ -52,21 +53,13 @@
                               <h3 class="card-title">Available Vacancies</h3>
                             </div>
                             <!-- /.card-header -->
-                            <div class="card-body">
+                            <div class="card-body" style="margin-bottom:50px">
                                 @if (session('message'))
                                     <div class="alert alert-success" role="alert">
                                         {{ session('message') }}
                                     </div>
                                 @endif
                               <table id="example1" class="table table-bordered table-striped">
-                                <thead>
-                                <tr>
-                                  <th>SN</th>
-                                  <th>Post</th>
-                                  <th>Description</th>
-                                  <th>View</th>
-                                </tr>
-                                </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
@@ -81,7 +74,7 @@
                                     <tr>
                                         <th>SN</th>
                                         <th>Post</th>
-                                        <th>Description</th>
+                                        <th>Designation</th>
                                         <th>View</th>
                                     </tr>
                                 </tfoot>

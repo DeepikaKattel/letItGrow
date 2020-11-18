@@ -56,6 +56,36 @@
 		<script src="{{asset('js/html5.js')}}"></script>
 		<script src="{{asset('js/css3-mediaqueries.js')}}"></script>
 	<![endif]-->
+	<style>
+	html {
+    	background-color: hsla(200,40%,30%,.4);
+    	background-repeat: repeat-x;
+    	background-position:
+    		0 20%,
+    		0 100%,
+    		0 50%,
+    		0 100%,
+    		0 0;
+    	background-size:
+    		2500px,
+    		800px,
+    		500px 200px,
+    		1000px,
+    		400px 260px;
+    	animation: 50s para infinite linear;
+    	}
+
+    @keyframes para {
+    	100% {
+    		background-position:
+    			-5000px 20%,
+    			-800px 95%,
+    			500px 50%,
+    			1000px 100%,
+    			400px 0;
+    		}
+    	}
+    	</style>
 
 </head>
 <body id="page-top">

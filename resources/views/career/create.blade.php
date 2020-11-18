@@ -35,8 +35,12 @@
 						<div class="sm-2-5 ">
 							<div class="wrap-col">
 								<div class="wow fadeInLeft" data-wow-delay=".1s" data-wow-duration="1s">
-									<h3>Marketing</h3>
+									<h5>Department:</h5><p>Marketing</p>
+									<h5>Designation:</h5><p>Junior Salesman</p>
+									<h5>Job Description:</h5>
 									<p>Should be able to manage business efficiently.</p>
+									<h5>Number of Vacancies</h5>
+									<p>5</p>
 								</div>
 							</div>
 						</div>
@@ -58,16 +62,16 @@
                                         <form action="{{route('careers.store')}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                             <label>
-                                                <input type="text" name="name" id="name" required="true" placeholder="Your Name"/>
+                                                <input type="text" name="name" id="name" required="true" placeholder="Name"/>
                                             </label>
                                             <label>
-                                                <input type="email" name="email" required="true" placeholder="Your Email"/>
+                                                <input type="email" name="email" required="true" placeholder="Email"/>
                                             </label>
                                              <label>
-                                                <input type="text" name="address" required="true" placeholder="Enter Address"/>
+                                                <input type="text" name="address" required="true" placeholder="Address"/>
                                             </label>
                                             <label>
-                                                <input type="text" name="phoneNumber" required="true" placeholder="Your Phone Number"/>
+                                                <input type="text" name="phoneNumber" required="true" placeholder="Phone Number"/>
                                             </label>
 
                                              <label>Upload CV:</label>

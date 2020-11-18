@@ -49,12 +49,8 @@ class ContactUsController extends Controller
                 'email' => $request['email'],
                 'message' =>$request['message'],
             );
-            $contactMessage = [
-                'title' => 'Let IT Grow',
-                'body' => 'Someone Wants to Contact.'
-            ];
-            $message = new SendMail($contactMessage);
-            Mail::to("info@letitgrow.com")->send($message);
+            $message = new SendMail($data);
+            Mail::to("easycarservicenepal@gmail.com")->send($message);
             return redirect()->back()->with("success", "The record has been stored");
         } else {
             return redirect()->back()->with("error", "There is an error");

@@ -3,9 +3,9 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+
 
 class SendMail extends Mailable
 {
@@ -17,9 +17,12 @@ class SendMail extends Mailable
      * @return void
      */
     public $data;
-    public function __construct($contactMessage)
+
+
+    public function __construct($data)
     {
         $this->data;
+
     }
 
     /**
@@ -30,6 +33,6 @@ class SendMail extends Mailable
     public function build()
     {
         return $this->subject('Someone Wants to Contact')
-            ->view('mail.contact',compact($this));
+            ->view('mail.contact',compact(['data' => $this->data]));
     }
 }
