@@ -49,6 +49,19 @@
                     </span>
                     @enderror
                   </div>
+                  <div class="form-group">
+                    <label for="company_name">Company Name</label>
+                    <input type="text" class="form-control" id="company_name" name="company_name" placeholder="Enter Company Name" value="{{old('company_name', $user->company_name)}}">
+                  </div>
+                  <div class="form-group">
+                    <label for="designation">Designation</label>
+                    <input type="text" class="form-control" id="designation" name="designation" placeholder="Enter Designation" value="{{old('designation', $user->designation)}}">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="company_type">Company Type</label>
+                    <input type="text" class="form-control" id="company_type" name="company_type" placeholder="Enter Company Type" value="{{old('company_type', $user->company_type)}}">
+                  </div>
 
 
                 <!-- /.card-body -->

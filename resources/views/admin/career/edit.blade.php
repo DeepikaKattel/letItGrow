@@ -42,7 +42,7 @@
                     <input type="text" class="form-control" id="department" name="department" placeholder="Enter Department" value="{{old('department', $career->department)}}">
                   </div>
                   <div class="form-group">
-                    <label for="designation">Designation</label>
+                    <label for="designation">Designastion</label>
                     <input type="text" class="form-control" id="designation" name="designation" placeholder="Enter Designation" value="{{old('designation', $career->designation)}}">
                   </div>
                   <div class="form-group">

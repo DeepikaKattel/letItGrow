@@ -62,12 +62,16 @@
                               <table id="example1" class="table table-bordered table-striped">
                                 <tbody>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Marketing</td>
-                                        <td>Junior Salesman</td>
-                                       <td id="none">
+                                      @foreach($career as $c)
+                                        <td></td>
+                                        <td>{{$c->department}}</td>
+                                        <td>{{$c->designation}}</td>
+                                        <td>{{$c->job_description}}</td>
+                                        <td>{{$c->vacancyNumber}}</td>
+                                        <td id="none">
                                           <a href="{{route('careers.create')}}"><i class="fa fa-lg fa-book"></i></a>
-                                       </td>
+                                        </td>
+                                      @endforeach
                                     </tr>
                                 </tbody>
                                 <tfoot>

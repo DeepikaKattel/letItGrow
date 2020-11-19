@@ -7,12 +7,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Orders</h1>
+              <h1>Candidates</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Order Table</li>
+                <li class="breadcrumb-item active">Candidates</li>
               </ol>
             </div>
           </div>
@@ -26,7 +26,7 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">Table showing orders</h3>
+                  <h3 class="card-title">Candidates</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -34,38 +34,36 @@
                     <thead>
                     <tr>
                       <th>S.N.</th>
-                      <th>User</th>
-                      <th>Food</th>
-                      <th>Quantity</th>
-                      <th>Price</th>
-                      <th>Loyalty Points</th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Address</th>
+                      <th>Phone Number</th>
+                      <th>CV</th>
+                      <th>Application ID</th>                      
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($orderDetails as $o)
+                    @foreach($candidates as $c)
                        <tr>
                            <td>{{$loop->iteration}}</td>
-                           <td>{{$o->user->name}}</td>
-                           <td>{{$o->food->name}}</td>
-                           <td>{{$o->quantity}}</td>
-                           <td>{{$o->price}}</td>
-                           <td>{{$o->loyalty_points}}</td>
-                           <td id="none">
-                               <a href="{{route('order.edit',$o->id)}}"><i class="fa fa-lg fa-edit"></i></a>
-                               @method('DELETE')
-                               <a onclick="return confirm('Do you want to delete')" href="{{route('order.destroy',$o->id)}}"><i class="fa fa-lg fa-minus-circle" style="color:red"></i></a>
-                           </td>
+                           <td>{{$c->name}}</td>
+                           <td>{{$c->email}}</td>
+                           <td>{{$c->address}}</td>
+                           <td>{{$c->phoneNumber}}</td>
+                           <td>{{$c->cv}}</td> 
+                           <td>{{$c->designation_id}}</td>                         
                        </tr>
                    @endforeach
                     </tbody>
                     <tfoot>
                     <tr>
                       <th>S.N.</th>
-                      <th>User</th>
-                      <th>Food</th>
-                      <th>Quantity</th>
-                      <th>Price</th>
-                      <th>Loyalty Points</th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Address</th>
+                      <th>Phone Number</th>
+                      <th>CV</th>
+                      <th>Application ID</th>      
                     </tr>
                     </tfoot>
                   </table>

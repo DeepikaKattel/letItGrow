@@ -65,7 +65,23 @@
                       <label for="password-confirm">{{ __('Confirm Password') }}</label>
                       <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                   </div>
+                  <div class="form-group">
+                    <label for="company_name">Company Name</label>
+                    <input type="text" class="form-control" id="company_name" name="company_name" placeholder="Enter Company Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="designation">Designation</label>
+                    <input type="text" class="form-control" id="designation" name="designation" placeholder="Enter Designation">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="company_type">Company Type</label>
+                    <input type="text" class="form-control" id="company_type" name="company_type" placeholder="Enter Company Type">
+                  </div>
+                  
+
                 </div>
+
 
                 <!-- /.card-body -->
                 <div class="card-footer">

@@ -16,13 +16,12 @@ class SendMail extends Mailable
      *
      * @return void
      */
-    public $data;
+    public $contact;
+    
 
-
-    public function __construct($data)
+    public function __construct($contact)
     {
-        $this->data;
-
+        $this->contact;       
     }
 
     /**
@@ -33,6 +32,6 @@ class SendMail extends Mailable
     public function build()
     {
         return $this->subject('Someone Wants to Contact')
-            ->view('mail.contact',compact(['data' => $this->data]));
+            ->view('mail.contact',compact(['contact' => $this->contact]));
     }
 }

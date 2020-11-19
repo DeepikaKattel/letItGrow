@@ -8,7 +8,7 @@
 </head>
 
 <body>
-   <h1>Let IT Grow</h1>
+   <h1><a href="{{url('/')}}">Let IT Grow</a></h1>
     @yield('content')
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="{{asset('js/form.js')}}"></script>

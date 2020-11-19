@@ -115,23 +115,16 @@
             </a>
           </li>
           <li class="nav-item has-treeview menu-open">
-              <a href="" class="nav-link">
+              <a href="{{route('candidates')}}" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
                 <p>
-                  Unapproved Users
+                  Candidates
                   <span class="badge badge-danger right"></span>
                 </p>
               </a>
           </li>
-          <li class="nav-item has-treeview menu-open">
-            <a href="" class="nav-link">
-              <i class="nav-icon fas fa-shopping-cart"></i>
-              <p>
-                Orders
-              </p>
-            </a>
-          </li>
-        <li class="nav-item has-treeview">
+         
+          <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
@@ -141,13 +134,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{route('users.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>List Users</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{route('users.create')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Users</p>
                 </a>
@@ -178,29 +171,7 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-balance-scale"></i>
-                <p>
-                  Items
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>List Items</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Add Items</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
+         
           {{--<li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-circle text-warning"></i>

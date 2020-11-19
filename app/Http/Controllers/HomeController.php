@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Career;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -29,6 +32,15 @@ class HomeController extends Controller
     public function dashboard()
     {
         $users = User::all()->count();
-        return view('admin.dashboard', compact('users'));
+        $candidates = Career::all()->count();
+        $usersUnverified = User::whereNull('email_verified_at')->get();
+        $usersCount = count($usersUnverified);
+        return view('admin.dashboard', compact('users','usersCount','candidates'));
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/login');
     }
 }

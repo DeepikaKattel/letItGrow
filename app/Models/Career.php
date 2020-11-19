@@ -10,6 +10,6 @@ class Career extends Model
     use HasFactory;
     protected $table = 'careers';
     protected $fillable = [
-        'name', 'email', 'address', 'phoneNumber','cv'
+        'name', 'email', 'address', 'phoneNumber','cv','designation_id'
     ];
 }

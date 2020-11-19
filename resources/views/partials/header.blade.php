@@ -19,7 +19,7 @@
               </ul>
            </li>--}}
            <li><a href="{{route('about')}}"><span>About</span></a></li>
-           <li><a href="{{route('career')}}"><span>Career</span></a></li>
+           <li><a href="{{route('career.index')}}"><span>Career</span></a></li>
            <li class="last"><a href="{{route('contact')}}"><span>Contact</span></a></li>
            @if (Route::has('login'))
                @auth

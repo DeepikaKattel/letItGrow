@@ -10,7 +10,7 @@
 	<meta charset="utf-8">
 	<title>Let IT Grow | It Services</title>
 	<meta name="description" content="Let IT Grow">
-	<meta name="author" content="https://www.zerotheme.com">
+	<meta name="author" content="https://www.letitgrownepal.com">
 
     <!-- Mobile Specific Metas
   ================================================== -->
@@ -56,37 +56,33 @@
 		<script src="{{asset('js/html5.js')}}"></script>
 		<script src="{{asset('js/css3-mediaqueries.js')}}"></script>
 	<![endif]-->
-    {--<style>
-	html {
-    	background-color: hsla(200,40%,30%,.4);
-    	background-repeat: repeat-x;
-    	background-image:url(../images/computer.jpg);
-    	background-position:
-    		0 20%,
-    		0 100%,
-    		0 50%,
-    		0 100%,
-    		0 0;
-    	background-size:
-    		2500px,
-    		800px,
-    		500px 200px,
-    		1000px,
-    		400px 260px;
-    	animation: 50s para infinite linear;
-    	}
+   <style>
+  
 
-    @keyframes para {
-    	100% {
-    		background-position:
-    			-5000px 20%,
-    			-800px 95%,
-    			500px 50%,
-    			1000px 100%,
-    			400px 0;
-    		}
-    	}
-    	</style>--}
+h1 {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+ 
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+   </style>
 
 </head>
 <body id="page-top">
@@ -102,10 +98,12 @@
 					<!---Hero Content--->
 					<div class="hero-content-wrapper">
 					  <div class="hero-content">
-						<h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4>
-						<img src={{asset('images/logo.png')}} style="height:200px;width:250px"/>
-						<h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s"> <canvas id="myCanvas" style="margin-top:0px"></canvas></h1>
-						<a href="{{asset('about')}}" class="button button-skin wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Read More</a>
+						<!-- <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4> -->
+						
+                        <img src="{{asset('images/logo.png')}}"class="wow fadeIn"style="height:300px;width:300px;box-shadow:2px 2px 2px 2px"/>
+						<h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px black"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:rgba(40,215,226)">IT</span>Grow</h1>
+                        
+						<!-- <a href="{{asset('about')}}" class="button button-skin wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Read More</a> -->
 					  </div>
 					</div>
 					<!---Scroller--->

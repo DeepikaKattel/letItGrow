@@ -43,14 +43,8 @@ class ContactUsController extends Controller
         $contact->message = request('message');
         $contact->save();
         $contactSave = $contact->save();
-        if ($contactSave) {
-            $data = array(
-                'name' => $request['name'],
-                'email' => $request['email'],
-                'message' =>$request['message'],
-            );
-            $message = new SendMail($data);
-            Mail::to("easycarservicenepal@gmail.com")->send($message);
+        if ($contactSave) {                 
+            Mail::to("easycarservicenepal@gmail.com")->send(new SendMail($contact));
             return redirect()->back()->with("success", "The record has been stored");
         } else {
             return redirect()->back()->with("error", "There is an error");

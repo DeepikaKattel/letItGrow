@@ -20,6 +20,8 @@ class CreateCareersTable extends Migration
             $table->string('address');
             $table->string('phoneNumber');
             $table->string('cv')->nullable();
+            $table->unsignedBigInteger('designation_id');
+            $table->foreign('designation_id')->references('id')->on('admin_careers')->onDelete('cascade');
             $table->timestamps();
         });
     }

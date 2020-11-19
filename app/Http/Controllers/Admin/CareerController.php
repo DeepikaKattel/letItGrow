@@ -109,4 +109,9 @@ class CareerController extends Controller
         $career = AdminCareer::find($id)->delete();
         return redirect('adminCareer')->with('status','Deleted Successfully');
     }
+
+    public function candidates(){
+        $candidates = DB::table('careers')->get();
+        return view('admin.candidates',compact('candidates'));
+    }
 }

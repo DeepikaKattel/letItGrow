@@ -26,7 +26,7 @@
 			<div class="crumbs">
 				<ul>
 					<li><a href="{{url('/')}}">Home</a></li>
-					<li><a href="{{route('career')}}">Career</a></li>
+					<li><a href="{{route('career.index')}}">Career</a></li>
 				</ul>
 			</div>
 			<div id="contact-area">
@@ -59,7 +59,7 @@
                                     @endif
 									<div id="contact_results"></div>
 									<div id="contact_body">
-                                        <form action="{{route('careers.store')}}" method="post" enctype="multipart/form-data">
+                                        <form action="{{route('career.store')}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                             <label>
                                                 <input type="text" name="name" id="name" required="true" placeholder="Name"/>

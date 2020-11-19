@@ -1,6 +1,6 @@
     <footer id="page-footer">
 		<div class="zerogrid bottom-footer">
-			<div class="row">
+			<div class="row" style="justify-content:center">
 				<div class="bottom-social">
 					<a href="#"><i class="fa fa-facebook"></i></a>
 					<a href="#"><i class="fa fa-instagram"></i></a>

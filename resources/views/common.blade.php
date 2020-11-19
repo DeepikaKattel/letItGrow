@@ -19,7 +19,9 @@
     <!-- CSS
   ================================================== -->
 <!-- Definity CSS -->
-  	<link href="{{asset('css/zerogrid.css')}}" rel="stylesheet" media="all" type="text/css">
+<!-- Theme style -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="{{asset('css/zerogrid.css')}}" rel="stylesheet" media="all" type="text/css">
 	<link href="{{asset('css/style.css')}}" rel="stylesheet" media="all" type="text/css">
 	<link href="{{asset('css/menu.css')}}" rel="stylesheet" media="all" type="text/css">
 	<!-- Lightbox -->
@@ -30,9 +32,11 @@
 	<link href="{{asset('css/animate.css')}}" rel="stylesheet" media="all" type="text/css">
 	<link href="{{asset('css/networkAnimate.css')}}" rel="stylesheet" media="all" type="text/css">
 
-    <!-- DataTables -->
-    <link rel="stylesheet" href="{{asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
-    <link rel="stylesheet" href="{{asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+  
+  <!-- DataTables -->
+  <link rel="stylesheet" href="{{asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+  <link rel="stylesheet" href="{{asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+  
 
 	<!-- Custom Fonts -->
 	<link href="{{asset('font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">

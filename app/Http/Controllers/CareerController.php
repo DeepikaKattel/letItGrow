@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Mail\SendMail;
 use App\Models\Career;
+use App\Models\AdminCareer;
 use App\Models\ContactUs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\DB;
 
 class CareerController extends Controller
 {
@@ -17,7 +19,8 @@ class CareerController extends Controller
      */
     public function index()
     {
-        //
+        $adminCareer = DB::table('admin_careers')->get();      
+        return view('career.index', compact('adminCareer'));
     }
 
     /**
@@ -43,9 +46,10 @@ class CareerController extends Controller
         $career->email = request('email');
         $career->address = request('address');
         $career->phoneNumber = request('phoneNumber');
+        $career->designation_id = request('designation_id');
         if ($request->hasFile('cv')) {
             $cv = $request->cv;
-            $fileName = $career->name . "." . rand() . "." . $cv->getClientOriginalExtension();
+            $fileName = $career->name . "." . $cv->getClientOriginalExtension();
             $destination_path = public_path("careerCV/");
             $cv->move($destination_path, $fileName);
             $career->cv = 'careerCV/' . $fileName;
@@ -79,7 +83,7 @@ class CareerController extends Controller
      */
     public function show($id)
     {
-        //
+               
     }
 
     /**
@@ -90,7 +94,8 @@ class CareerController extends Controller
      */
     public function edit($id)
     {
-        //
+        $adminCareer = AdminCareer::find($id);
+        return view('career.edit', compact('adminCareer'));
     }
 
     /**
