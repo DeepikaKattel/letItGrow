@@ -7,12 +7,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Categories</h1>
+              <h1>Career</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Categories</li>
+                <li class="breadcrumb-item active">Career</li>
               </ol>
             </div>
           </div>
@@ -26,7 +26,7 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">Table showing different categories</h3>
+                  <h3 class="card-title">Career</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -34,19 +34,23 @@
                     <thead>
                     <tr>
                       <th>S.N.</th>
-                      <th>Name</th>
-                      <th>Image</th>
+                      <th>Department</th>
+                      <th>Designation</th>
+                      <th>Job Description</th>
+                      <th>Vacancy Number</th>
                       <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($categories as $c)
+                    @foreach($career as $c)
                        <tr>
                            <td>{{$loop->iteration}}</td>
-                           <td>{{$c->name}}</td>
-                           <td><img src="{{asset("$c->image")}}" style="height:30px;width: 50px;"></td>
+                           <td>{{$c->department}}</td>
+                           <td>{{$c->designation}}</td>
+                           <td>{{$c->job_description}}</td>
+                           <td>{{$c->vacancyNumber}}</td>                           
                            <td id="none">
-                               <a href="{{route('categories.edit',$c->id)}}"><i class="fa fa-lg fa-edit"></i></a>
+                               <a href="{{route('adminCareer.edit',$c->id)}}"><i class="fa fa-lg fa-edit"></i></a>
                                @method('DELETE')
                                <a onclick="return confirm('Do you want to delete')" href="{{route('c.destroy',$c->id)}}"><i class="fa fa-lg fa-minus-circle" style="color:red"></i></a>
                            </td>
@@ -56,8 +60,10 @@
                     <tfoot>
                     <tr>
                       <th>S.N.</th>
-                      <th>Name</th>
-                      <th>Image</th>
+                      <th>Department</th>
+                      <th>Designation</th>
+                      <th>Job Description</th>
+                      <th>Vacancy Number</th>
                       <th>Action</th>
                     </tr>
                     </tfoot>

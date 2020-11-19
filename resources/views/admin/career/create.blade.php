@@ -8,12 +8,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Categories Form</h1>
+            <h1>Career Form</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Categories Form</li>
+              <li class="breadcrumb-item active">Career Form</li>
             </ol>
           </div>
         </div>
@@ -29,42 +29,38 @@
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Categories</h3>
+                <h3 class="card-title">Career</h3>
               </div>
               <!-- /.card-header -->
-              <!-- form start -->
-              @if($count < 2)
-              <form action="{{route('categories.store')}}" method="post" enctype="multipart/form-data">
+              <!-- form start -->              
+              <form action="{{route('adminCareer.store')}}" method="post" enctype="multipart/form-data">
               @csrf
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Category">
+                    <label for="department">Department</label>
+                    <input type="text" class="form-control" id="department" name="department" placeholder="Enter Department">
                   </div>
                   <div class="form-group">
-                      <label for="image">Choose Image</label>
-                      <div class="input-group">
-                        <div class="custom-file">
-                          <input type="file" class="form-control" id="image" name="image" placeholder="Choose Image">
-                        </div>
-                        <div class="input-group-append">
-                          <span class="input-group-text" id="">Upload</span>
-                        </div>
-                      </div>
+                    <label for="designation">Designation</label>
+                    <input type="text" class="form-control" id="designation" name="designation" placeholder="Enter Designation">
                   </div>
+                  <div class="form-group">
+                    <label for="department">Job Description</label>
+                    <textarea class="form-control" id="job_description" name="job_description" placeholder="Enter Job Description"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="vacancyNumber">Vacancy Number</label>
+                    <input type="number" class="form-control" id="vacancyNumber" name="vacancyNumber" placeholder="Enter Vacancy Number">
+                  </div>
+                  
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-              </form>
-            @else
-             <div class="card-body">
-               <p> Sorry, you cannot add more items. Please contact for premium subscription.</h4>
-             </div>
-            @endif
+              </form>           
             </div>
-            <!-- /.card -->       </div>
+            <!-- /.card -->       
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </section>

@@ -26,3 +26,6 @@ Route::post('/contactStore', [App\Http\Controllers\ContactUsController::class, '
 
 Route::get('/career', [App\Http\Controllers\FrontEndController::class, 'career'])->name('career');
 Route::resource('careers','App\Http\Controllers\CareerController');
+
+Route::resource('adminCareer','App\Http\Controllers\Admin\CareerController');
+Route::get('/adminCareer/destroy/{id}', 'App\Http\Controllers\Admin\CareerController@destroy')->name('c.destroy');
