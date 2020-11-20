@@ -565,7 +565,7 @@ header .wrap-header {
     position: relative;
     overflow: visible;
     z-index: 1;
-    background: #ffffff;
+    background: #d7e8f2;
     box-shadow: rgba(0, 0, 0, 0.7) 0 105px 90px -90px;
 }
 #container .wrap-container {
@@ -1033,7 +1033,7 @@ footer#page-footer {
     display: block;
 }
 footer a {
-    color: #999;
+    color: white;
     font-weight: bold;
     text-shadow: none;
 }
@@ -1101,7 +1101,7 @@ footer .col-footer-4 img {
 }
 
 footer .bottom-footer {
-    color: #92907c;
+    color: white;
     text-align: center;
     padding: 40px 0;
     border-top: 1px solid #777;

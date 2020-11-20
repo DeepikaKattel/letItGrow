@@ -77,7 +77,7 @@ header{
             bottom:0;
             left:0;
             background: url(../images/wave.png);
-            animation: animate 10s linear infinite;
+            /* animation: animate 10s linear infinite; */
         }
         header .wave:before{
             content:'';
