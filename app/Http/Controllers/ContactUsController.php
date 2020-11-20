@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\SendMail;
+use Mail;
 use App\Models\ContactUs;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
+use App\Http\Requests;
+use Illuminate\Support\Facades\DB;
 
 class ContactUsController extends Controller
 {
@@ -43,8 +44,18 @@ class ContactUsController extends Controller
         $contact->message = request('message');
         $contact->save();
         $contactSave = $contact->save();
-        if ($contactSave) {                 
-            Mail::to("easycarservicenepal@gmail.com")->send(new SendMail($contact));
+        $data = array(
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'message' => $request['message'],
+        );                 
+   
+        Mail::send(['text'=>'mail.contact'], $data, function($message) {
+            $message->to('easycarservicenepal@gmail.com')->subject
+                ('Someone wants to contact you');            
+        });
+       
+        if ($contactSave) {                        
             return redirect()->back()->with("success", "The record has been stored");
         } else {
             return redirect()->back()->with("error", "There is an error");

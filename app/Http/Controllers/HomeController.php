@@ -43,4 +43,8 @@ class HomeController extends Controller
         Auth::logout();
         return redirect('/login');
     }
+    public function wave()
+    {       
+        return view('wave');
+    }
 }

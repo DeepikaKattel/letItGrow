@@ -27,7 +27,8 @@
 	<!-- Video Background -->
 	<link href="{{asset('css/jquery.mb.ytplayer.min.css')}}" rel="stylesheet" media="all" type="text/css">
 	<!-- Animate.css -->
-	<link href="{{asset('css/animate.css')}}" rel="stylesheet" media="all" type="text/css">
+    <link href="{{asset('css/animate.css')}}" rel="stylesheet" media="all" type="text/css">
+    <link href="{{asset('css/robot.css')}}" rel="stylesheet" media="all" type="text/css">
 	<link href="{{asset('css/networkAnimate.css')}}" rel="stylesheet" media="all" type="text/css">
 
 
@@ -59,69 +60,129 @@
    <style>
   
 
-h1 {
-  position: relative;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-size: 2em;
-  letter-spacing: 4px;
-  overflow: hidden;
-  background: linear-gradient(90deg, #000, #fff, #000);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 3s linear infinite;
-  -webkit-background-clip: text;
- 
-}
 
-@keyframes animate {
-  0% {
-    background-position: -500%;
-  }
-  100% {
-    background-position: 500%;
-  }
-}
+header{
+            position:relative;
+            width:100%;
+            height:100vh;
+            background:url(../images/backgroundWelcom.jpg) center center;
+            background-size:cover;
+            background-attachment:fixed;
+            
+        }
+        header .wave{
+            position:absolute;
+            width:100%;
+            height:143px;
+            bottom:0;
+            left:0;
+            background: url(../images/wave.png);
+            animation: animate 10s linear infinite;
+        }
+        header .wave:before{
+            content:'';
+            width:100%;
+            height:143px;
+            background: url(../images/wave.png);
+            position:absolute;
+            top:0;
+            left:0;
+            opacity:0.8;
+            animation: animate-reverse 10s linear infinite;
+        }
+        header .wave:after{
+            content:'';
+            width:100%;
+            height:143px;
+            background: url(../images/wave.png);
+            position:absolute;
+            top:0;
+            left:0;
+            opacity:0.6;
+            animation-delay:-5s;
+            animation: animate 20s linear infinite;
+        }
+        @keyframes animate{
+            0%{
+                background-position:0;
+            
+            }
+            100%{
+                background-position:1360px;
+            }
+        }
+        @keyframes animate-reverse{
+            0%{
+                background-position:1360px;
+            
+            }
+            100%{
+                background-position:1360px;
+            }
+        }
    </style>
 
 </head>
-<body id="page-top">
-<div class="wrap-body">
-
-	<!--////////////////////////////////////Header-->
-	<header>
-		<div class="wrap-header" >
-
-			<!---Main Header--->
-			<div class="main-header">
-				<div class="bg-overlay">
-					<!---Hero Content--->
-					<div class="hero-content-wrapper">
-					  <div class="hero-content">
-						<!-- <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4> -->
-						
-                        <img src="{{asset('images/logo.png')}}"class="wow fadeIn"style="height:300px;width:300px;box-shadow:2px 2px 2px 2px"/>
-						<h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px black"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:rgba(40,215,226)">IT</span>Grow</h1>
+<body id="page-top" style="color:grey">
+    <div class="wrap-body">
+        <!--////////////////////////////////////Header-->
+        <header>
+                <!---Main Header--->
+                <div class="main-header">
+                    <div class="bg-overlay">
+                        <!---Hero Content--->
+                        <div class="hero-content-wrapper">
+                        <div class="hero-content">
+                            <!-- <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4> -->
+                            
+                            <!-- <img src="{{asset('images/logo.png')}}"class="wow fadeIn"style="height:200px;width:500px;box-shadow:2px 2px 2px 2px"/> -->
+                            <h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px black"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:rgba(40,215,226)">IT</span>Grow</h1>
+                            
+                            <!-- <a href="{{asset('about')}}" class="button button-skin wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Read More</a> -->
+                        </div>
+                        </div>
+                        <!-- <canvas id="c"></canvas> -->
+                        <div class="container">
+      <div class="robot">
+        <div class="head">
+          <div class="eyes">
+            <div class="left-eye"></div>
+            <div class="right-eye"></div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="left-arm"></div>
+          <div class="torso"></div>
+          <div class="right-arm"></div>
+        </div>
+        <div class="legs">
+          <div class="left-leg"></div>
+          <div class="right-leg"></div>
+        </div>
+      </div>
+    </div>          
                         
-						<!-- <a href="{{asset('about')}}" class="button button-skin wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Read More</a> -->
-					  </div>
-					</div>
-					<!---Scroller--->
-					<div id="scroll-page-content">
-						<a href="#page-content" class="scroller">
-							<span class="scroller-text">scroll down</span>
-							<div class="scroller-button">
-								<i class="fa fa-angle-double-down"></i>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-			<canvas id="c"></canvas>
+                    </div>
+                    <div class="wave">                           
+                    </div>
+                    <!---Scroller--->                    
+                    <div id="scroll-page-content">
+                            <a href="#page-content" class="scroller">
+                                <span class="scroller-text">scroll down</span>
+                                <div class="scroller-button">
+                                    <i class="fa fa-angle-double-down"></i>
+                                </div>
+                            </a>
+                        </div>
+                                    
 
-			@include('partials.header')
-		</div>
-	</header>
+               
+            </div>            
+        </header>
+        <div class="menu">
+            @include('partials.header')
+        </div>
+    </div>
 
 
 	<!--////////////////////////////////////Container-->
@@ -136,8 +197,8 @@ h1 {
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
 						</div>
 						<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">
-							<div class="row">
-								<div class="lg-1-4 md-1-3 sm-1-2">
+							<div class="row" style="margin-left:80px">
+								<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:40px">
 									<div class="portfolio-box zoom-effect">
 										<img src="{{asset('images/mobileApplication.jpg')}}" class="img-responsive" alt="" style="height:325px">
 										<div class="portfolio-box-caption">
@@ -150,13 +211,10 @@ h1 {
 													<a href="{{asset('about')}}" class="button button-skin">Read More</a>
 												</div>
 											</div>
-										</div>
-										<div class="project-category" style="margin-left:20px">
-                                            Mobile Application will assure you an increment in customer’s reach exponentially as your business will be easily accessible with high quality..
-                                        </div>
+										</div>										
 									</div>
 								</div>
-								<div class="lg-1-4 md-1-3 sm-1-2">
+								<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:40px">
 									<div class="portfolio-box zoom-effect">
 										<img src="{{asset('images/webDevelopment.jpg')}}" class="img-responsive" alt="" style="height:325px">
 										<div class="portfolio-box-caption">
@@ -169,31 +227,11 @@ h1 {
 													<a href="{{route('about')}}" class="button button-skin">Read More</a>
 												</div>
 											</div>
-										</div>
-										<div class="project-category" style="margin-left:20px">
-                                            Your business can now use the digitalized platform in the form of Web Application, decreasing the resources required in an efficient manner.
-                                        </div>
+										</div>										
 									</div>
 								</div>
-								<div class="lg-1-4 md-1-3 sm-1-2">
-									<div class="portfolio-box zoom-effect">
-										<img src="{{asset('images/hosting.jpg')}}" class="img-responsive" alt="" style="height:325px">
-										<div class="portfolio-box-caption">
-											<div class="portfolio-box-caption-content">
-												<div class="project-name">
-													Professional IT Training Services
-												</div>
-												<div class="project-button">
-													<a href="{{route('about')}}" class="button button-skin">Read More</a>
-												</div>
-											</div>
-										</div>
-										<div class="project-category" style="margin-left:20px">
-                                            IT handles are considered to be smarter in this century. Let IT Grow is the best platform for you to come and acquire professional skills.
-                                        </div>
-									</div>
-								</div>
-								<div class="lg-1-4 md-1-3 sm-1-2">
+								
+								<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:40px">
 									<div class="portfolio-box zoom-effect">
 										<img src="{{asset('images/webDesign.jpg')}}" class="img-responsive" alt="" style="height:325px;width:500px">
 										<div class="portfolio-box-caption">
@@ -206,9 +244,7 @@ h1 {
 												</div>
 											</div>
 										</div>
-										<div class="project-category" style="margin-left:20px">
-                                            Web designing is very important for any web application. Designers are welcomed by Let IT Grow to showcase their skills and build a better future.
-                                        </div>
+										
 									</div>
 								</div>
 							</div>
@@ -415,7 +451,7 @@ h1 {
 	<script src="{{asset('js/main.js')}}"></script>
 
 
-<script>
+<!-- <script>
 /*
 Comments were requested, here we go :)
 
@@ -487,8 +523,8 @@ thing("Yo.");
     These are the variable definitions for the values that will be used
     throughout the rest of the script.
     */
-    var canvas_width = 800; //Needs to be a multiple of the resolution value below.
-    var canvas_height = 650; //This too.
+    var canvas_width = 200; //Needs to be a multiple of the resolution value below.
+    var canvas_height = 300; //This too.
 
     var resolution = 10; //Width and height of each cell in the grid.
 
@@ -1052,6 +1088,26 @@ window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequ
 
 //And this line calls the init() function defined above to start the script.
 Fluid.initialize();
+
+</script> -->
+<script>
+    $(document).ready(function () {
+  $('div.main-header').click(function() {
+  $('html, body').animate({
+    scrollTop: $("div.menu").offset().top
+  }, 1000)
+}), 
+  $('div.middle').click(function (){
+    $('html, body').animate({
+      scrollTop: $("div.bottom").offset().top
+    }, 1000)
+  }),
+  $('div.bottom').click(function (){
+    $('html, body').animate({
+      scrollTop: $("div.top").offset().top
+    }, 1000)
+  })
+});
 </script>
 </div>
 </body>

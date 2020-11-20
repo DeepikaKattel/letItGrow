@@ -1,4 +1,4 @@
-    <footer id="page-footer">
+<footer id="page-footer">
 		<div class="zerogrid bottom-footer">
 			<div class="row" style="justify-content:center">
 				<div class="bottom-social">
