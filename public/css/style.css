@@ -565,7 +565,7 @@ header .wrap-header {
     position: relative;
     overflow: visible;
     z-index: 1;
-    background: #d7e8f2;
+    background: white;
     box-shadow: rgba(0, 0, 0, 0.7) 0 105px 90px -90px;
 }
 #container .wrap-container {
