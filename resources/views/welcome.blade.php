@@ -19,6 +19,7 @@
     <!-- CSS
   ================================================== -->
 	<!-- Definity CSS -->
+	<link rel="stylesheet" href="{{asset('css/pageLoader.css')}}">
   	<link href="{{asset('css/zerogrid.css')}}" rel="stylesheet" media="all" type="text/css">
 	<link href="{{asset('css/style.css')}}" rel="stylesheet" media="all" type="text/css">
 	<link href="{{asset('css/menu.css')}}" rel="stylesheet" media="all" type="text/css">
@@ -45,6 +46,8 @@
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 
 
 	<!-- JS -->
@@ -288,6 +291,7 @@ margin-bottom: 30px;
 }
 </style>
 </head>
+@include('pageLoader')
 <body id="page-top" style="color:grey">
     <div class="wrap-body">
         <!--////////////////////////////////////Header-->
@@ -592,6 +596,7 @@ margin-bottom: 30px;
 		</div>
 	</section>
 
+
     @include('partials.footer')
 	<div id="page-top"><a href="#page-top" class="button button-toTop f-right"><i class="fa fa-angle-double-up"></i></a></div>
 
@@ -658,6 +663,7 @@ var galleryTop = new Swiper('.swiper-container.testimonial', {
   });
   
   </script>
+
 </div>
 </body>
 </html>
