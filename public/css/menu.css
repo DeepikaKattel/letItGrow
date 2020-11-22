@@ -1,4 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400, 700);
+#menu #cssmenu {
+    background: #c9fcff;
+}
+#menu #cssmenu > ul > li > a {
+    color: #4c6792;
+}
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -30,7 +36,7 @@
 }
 #cssmenu {
     font-family: Montserrat, sans-serif;
-    background: #c9fcff;
+    background: #4c6792;
 }
 #cssmenu > ul > li {
     float: left;
@@ -56,7 +62,7 @@
     margin-right: 20px;
     margin-left: 10px;
     text-decoration: none;
-    color: #4c6792;
+    color: white;
     font-weight: 700;
     text-transform: uppercase;
 }

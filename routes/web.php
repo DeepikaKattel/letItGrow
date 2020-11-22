@@ -25,7 +25,7 @@ Route::get('/wave', [App\Http\Controllers\HomeController::class, 'wave'])->name(
 Route::get('/about', [App\Http\Controllers\FrontEndController::class, 'about'])->name('about');
 Route::get('/contact', [App\Http\Controllers\FrontEndController::class, 'contact'])->name('contact');
 Route::post('/contactStore', [App\Http\Controllers\ContactUsController::class, 'store'])->name('contact.store');
-
+Route::get('/vision', [App\Http\Controllers\FrontEndController::class, 'vision'])->name('vision');
 
 Route::resource('career','App\Http\Controllers\CareerController');
 
@@ -39,3 +39,6 @@ Route::get('/users/destroy/{id}', 'App\Http\Controllers\UserController@destroy')
 
 Route::resource('adminAbout','App\Http\Controllers\Admin\AboutController');
 Route::get('/adminAbout/destroy/{id}', 'App\Http\Controllers\Admin\AboutController@destroy')->name('a.destroy');
+
+Route::resource('adminVision','App\Http\Controllers\Admin\VisionController');
+Route::get('/adminVision/destroy/{id}', 'App\Http\Controllers\Admin\VisionController@destroy')->name('v.destroy');

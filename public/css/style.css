@@ -243,6 +243,9 @@ h6 {
     letter-spacing: 2.5px;
     font-weight: 500;
     line-height: 1.1;
+    color: #4c6792;
+}
+header h1 {
     color: white;
 }
 
@@ -565,7 +568,7 @@ header .wrap-header {
     position: relative;
     overflow: visible;
     z-index: 1;
-    background: #c9fcff;
+    background: white;
     box-shadow: rgba(0, 0, 0, 0.7) 0 105px 90px -90px;
 }
 #container .wrap-container {

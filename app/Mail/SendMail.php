@@ -11,18 +11,19 @@ use Illuminate\Queue\SerializesModels;
 class SendMail extends Mailable
 {
     use Queueable, SerializesModels;
+    protected $data;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public $contact;
+    
     
 
-    public function __construct($contact)
+    public function __construct($data=[])
     {
-        $this->contact;       
+        $this->data = $data;       
     }
 
     /**
@@ -33,6 +34,11 @@ class SendMail extends Mailable
     public function build()
     {
         return $this->subject('Someone Wants to Contact')
-            ->view('mail.contact',compact(['contact' => $this->contact]));
+            ->view('mail.career')->with('data', $this->data);
+        // ->attach($this->data['cv']->getRealPath(),
+        // [
+        //     'as' => $this->data['cv']->getOriginalClientName(),
+        //     'mime' => $this->data['cv']->getClientMimeType(),
+        // ]);
     }
 }

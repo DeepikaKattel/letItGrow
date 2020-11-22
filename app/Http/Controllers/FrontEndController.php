@@ -20,6 +20,10 @@ class FrontEndController extends Controller
     {
         return view('contact');
     }
+    public function vision()
+    {
+        return view('vision');
+    }
 
     
 

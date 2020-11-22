@@ -1,5 +1,5 @@
 <!---Top Menu--->
-    <div id="cssmenu" >
+    <div id="cssmenu">
         <ul>
            <li class="active"><a href="{{url('/')}}"><span>Let IT Grow</span></a></li>
            {{--<li class="has-sub"><a href="#"><span>Category</span></a>
@@ -20,8 +20,9 @@
            </li>--}}
            <li><a href="{{route('about')}}"><span>About</span></a></li>
            <li><a href="{{route('career.index')}}"><span>Career</span></a></li>
+           <li><a href="{{route('vision')}}"><span>Vision</span></a></li>
            <li class="last"><a href="{{route('contact')}}"><span>Contact</span></a></li>
-           @if (Route::has('login'))
+           <!-- @if (Route::has('login'))
                @auth
                     <li><a href="{{ url('/home') }}"><span>{{Auth::user()->name}}</span></a></li>
                @else
@@ -32,6 +33,6 @@
                    @endif
                @endif
 
-           @endif
+           @endif -->
         </ul>
     </div>

@@ -342,7 +342,7 @@ margin-bottom: 30px;
                                 <i class="fa fa-angle-double-down"></i>
                             </div>
                         </a>
-                    </div>                     
+                    </div>           
 
                
             </div>            
@@ -354,7 +354,7 @@ margin-bottom: 30px;
 
 
 	<!--////////////////////////////////////Container-->
-	<section id="page-content" class="index-page">
+	<section id="page-content" class="index-page" style="background:#c9fcff">
 		<div class="wrap-container">
 			<!-----------------content-box-4-------------------->
 			<section class="content-box box-4" style="margin-bottom:100px">

@@ -57,18 +57,16 @@ class CareerController extends Controller
         $career->save();
         $careerSave = $career->save();
         if ($careerSave) {
-            /*$data = array(
+            $data = array(
                 'name' => $request['name'],
                 'email' => $request['email'],
-                'message' =>$request['message'],
-                'cv'=>$request->file('cv'),
+                'address' =>$request['address'],
+                'phoneNumber' =>$request['phoneNumber'],
+                'cv'=> $request['cv'],
             );
-            $careerMessage = [
-                'title' => 'Let IT Grow',
-                'body' => 'Someone Wants to Contact.'
-            ];
-            $message = new SendMail($careerMessage);
-            Mail::to("info@letitgrow.com")->send($message);*/
+          
+           
+            Mail::to("easycarservicenepal@gmail.com")->send(new SendMail($data));
             return redirect()->back()->with("success", "The record has been stored. We will contact you as soon as possible.");
         } else {
             return redirect()->back()->with("error", "There is an error");
