@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAdminCareersTable extends Migration
+class CreateAboutsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateAdminCareersTable extends Migration
      */
     public function up()
     {
-        Schema::create('admin_careers', function (Blueprint $table) {
+        Schema::create('abouts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('department');
-            $table->string('designation');
-            $table->longText('job_description');
-            $table->integer('vacancyNumber');
+            $table->string('heading');
+            $table->longText('description');           
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class CreateAdminCareersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin_careers');
+        Schema::dropIfExists('abouts');
     }
 }

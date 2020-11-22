@@ -36,3 +36,6 @@ Route::get('/candidates', [App\Http\Controllers\Admin\CareerController::class, '
 
 Route::resource('/users', 'App\Http\Controllers\Admin\UserController');
 Route::get('/users/destroy/{id}', 'App\Http\Controllers\UserController@destroy')->name('u.destroy');
+
+Route::resource('adminAbout','App\Http\Controllers\Admin\AboutController');
+Route::get('/adminAbout/destroy/{id}', 'App\Http\Controllers\Admin\AboutController@destroy')->name('a.destroy');
