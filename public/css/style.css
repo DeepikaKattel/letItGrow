@@ -565,7 +565,7 @@ header .wrap-header {
     position: relative;
     overflow: visible;
     z-index: 1;
-    background: white;
+    background: #c9fcff;
     box-shadow: rgba(0, 0, 0, 0.7) 0 105px 90px -90px;
 }
 #container .wrap-container {
@@ -1025,7 +1025,7 @@ article .entry-content ol {
 /* ---------------------------------------------------------------------------- */
 footer#page-footer {
     background: #4c6792;
-    position: fixed;
+    position: relative;
     top: auto;
     bottom: 0;
     left: 0;

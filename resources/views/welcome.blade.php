@@ -350,7 +350,7 @@ margin-bottom: 30px;
         <div id="menu">
             @include('partials.header')
         </div>
-    </div>
+    
 
 
 	<!--////////////////////////////////////Container-->
