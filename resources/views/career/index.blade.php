@@ -64,7 +64,7 @@
                             <td>{{$loop->iteration}}</td>
                             <td>{{$c->department}}</td>
                             <td>{{$c->designation}}</td>
-                            <td>{{$c->job_description}}</td>
+                            <td>{!!$c->job_description!!}</td>
                             <td>{{$c->vacancyNumber}}</td>
                             <td id="none">
                                 <a href="{{route('career.edit',$c->id)}}"><i class="fa fa-lg fa-book"></i></a>

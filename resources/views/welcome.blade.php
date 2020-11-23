@@ -31,7 +31,8 @@
     <link href="{{asset('css/animate.css')}}" rel="stylesheet" media="all" type="text/css">
     <link href="{{asset('css/robot.css')}}" rel="stylesheet" media="all" type="text/css">
 	<link href="{{asset('css/networkAnimate.css')}}" rel="stylesheet" media="all" type="text/css">
-    <link href="{{asset('css/wave.css')}}" rel="stylesheet" media="all" type="text/css">
+	<link href="{{asset('css/wave.css')}}" rel="stylesheet" media="all" type="text/css">
+	
 
 
 	<!-- Custom Fonts -->
@@ -289,16 +290,13 @@ width: 38px;
 display: block;
 margin-bottom: 30px;
 }
-.sticky-top {
-    transition: all 0.25s ease-in;
+.carousel-control{
+	opacity:0;	
+}
+.carousel-control i{
+	color:white;	
 }
 
-/* style for when sitcky is applied */
-.stuck .sticky-top {
-    background-color: #222 !important;
-    padding-top: 3px !important;
-    padding-bottom: 3px !important;
-}
 </style>
 </head>
 @include('pageLoader')
@@ -321,24 +319,24 @@ margin-bottom: 30px;
                         </div>
                         </div>
                         <!-- <canvas id="c"></canvas> -->
-                        <div class="container">
-                        <div class="robot">
-                            <div class="head">
-                            <div class="eyes">
-                                <div class="left-eye"></div>
-                                <div class="right-eye"></div>
-                            </div>
-                            </div>
-                            <div class="body">
-                            <div class="left-arm"></div>
-                            <div class="torso"></div>
-                            <div class="right-arm"></div>
-                            </div>
-                            <div class="legs">
-                            <div class="left-leg"></div>
-                            <div class="right-leg"></div>
-                            </div>
-                        </div>
+                        <div class="containerRobot">
+							<div class="robot">
+								<div class="head">
+								<div class="eyes">
+									<div class="left-eye"></div>
+									<div class="right-eye"></div>
+								</div>
+								</div>
+								<div class="body">
+								<div class="left-arm"></div>
+								<div class="torso"></div>
+								<div class="right-arm"></div>
+								</div>
+								<div class="legs">
+								<div class="left-leg"></div>
+								<div class="right-leg"></div>
+								</div>
+							</div>
                         </div>          
                         
                     </div>
@@ -366,179 +364,193 @@ margin-bottom: 30px;
 
 
 	<!--////////////////////////////////////Container-->
-	<section id="page-content" class="index-page" style="background:#c9fcff">
+	<section id="page-content" class="index-page">
 		<div class="wrap-container">
 			<!-----------------content-box-4-------------------->
-			<section class="content-box box-4" style="margin-bottom:100px">
+			<section class="content-box box-4">
+			<div class="skew-cc"></div>	
 				<div class="zerogrid-fluid">
-					<div class="wrap-box">
+					<div class="wrap-box">									
 						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
 							<h2>Our Services</h2>
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
 						</div>
-                        <div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">
-                            <!-- bootstrap card with row name myCarousel as row 1-->
-                            <div class="carousel slide" id="myCarousel"> 
-                                <div class="carousel-inner"> 
-                                    <div class="item active"> 
-                                        <div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
-                                            <div class="portfolio-box zoom-effect">
-                                                <img src="{{asset('images/mobileApplication.jpg')}}" class="img-responsive" alt="" style="height:325px;filter:blur(2px);-webkit-filter: blur(2px)">
-                                                <div class="portfolio-box-caption">
-                                                    <div class="portfolio-box-caption-content">
-                                                        <div class="project-name">
-                                                            Mobile Application Development
-                                                        </div>
+							<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">
+								<!-- bootstrap card with row name myCarousel as row 1-->
+								<div class="carousel slide" id="myCarousel"> 
+									<div class="carousel-inner"> 
+										<div class="item active"> 
+											<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
+												<div class="portfolio-box zoom-effect">
+													<img src="{{asset('images/mobileApplication.jpg')}}" class="img-responsive" alt="" style="height:325px;filter:blur(2px);-webkit-filter: blur(2px)">
+													<div class="portfolio-box-caption">
+														<div class="portfolio-box-caption-content">
+															<div class="project-name">
+																Mobile Application Development
+															</div>
 
-                                                        <div class="project-button">
-                                                            <a href="{{asset('about')}}" class="button button-skin">Read More</a>
-                                                        </div>
-                                                    </div>
-                                                </div>										
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="item"> 
-                                        <div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
-                                            <div class="portfolio-box zoom-effect">
-                                                <img src="{{asset('images/webDevelopment.jpg')}}" class="img-responsive" alt="" style="height:325px;filter:blur(2px);-webkit-filter: blur(2px)">
-                                                <div class="portfolio-box-caption">
-                                                    <div class="portfolio-box-caption-content">
-                                                        <div class="project-name">
-                                                            Web Development
-                                                        </div>
+															<div class="project-button">
+																<a href="{{asset('about')}}" class="button button-skin">Read More</a>
+															</div>
+														</div>
+													</div>										
+												</div>
+											</div>
+										</div> 
+										<div class="item"> 
+											<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
+												<div class="portfolio-box zoom-effect">
+													<img src="{{asset('images/webDevelopment.jpg')}}" class="img-responsive" alt="" style="height:325px;filter:blur(2px);-webkit-filter: blur(2px)" >
+													<div class="portfolio-box-caption">
+														<div class="portfolio-box-caption-content">
+															<div class="project-name">
+																Web Development
+															</div>
 
-                                                        <div class="project-button">
-                                                            <a href="{{route('about')}}" class="button button-skin">Read More</a>
-                                                        </div>
-                                                    </div>
-                                                </div>										
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="item"> 
-                                        <div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
-                                            <div class="portfolio-box zoom-effect">
-                                                <img src="{{asset('images/webDesign.jpg')}}" class="img-responsive" alt="" style="height:325px;width:500px;filter:blur(2px);-webkit-filter: blur(2px)">
-                                                <div class="portfolio-box-caption">
-                                                    <div class="portfolio-box-caption-content">
-                                                        <div class="project-name">
-                                                            Web Design
-                                                        </div>
-                                                        <div class="project-button">
-                                                            <a href="{{route('about')}}" class="button button-skin">Read More</a>
-                                                        </div>
-                                                    </div>
-                                                </div>                                                
-                                            </div> 
-                                        </div>                                      
-                                    </div> 
-                                </div>
-                                 <a class="left carousel-control"
-                                        href="#myCarousel"
-                                        data-slide="prev"> 
-                            <i class="glyphicon glyphicon-chevron-left"> 
-                            </i> 
-                            </a> 
-                                <a class="right carousel-control" 
-                                href="#myCarousel" 
-                                data-slide="next"> 
-                                <i class="glyphicon glyphicon-chevron-right"> 
-                                </i> 
-                            </a> 
-                    
-                            </div> 
-                        </div> 						
-					</div>
+															<div class="project-button">
+																<a href="{{route('about')}}" class="button button-skin">Read More</a>
+															</div>
+														</div>
+													</div>										
+												</div>
+											</div>
+										</div> 
+										<div class="item"> 
+											<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
+												<div class="portfolio-box zoom-effect">
+													<img src="{{asset('images/webDesign.jpg')}}" class="img-responsive" alt="" style="height:325px;width:500px;filter:blur(2px);-webkit-filter: blur(2px)">
+													<div class="portfolio-box-caption">
+														<div class="portfolio-box-caption-content">
+															<div class="project-name">
+																Web Design
+															</div>
+															<div class="project-button">
+																<a href="{{route('about')}}" class="button button-skin">Read More</a>
+															</div>
+														</div>
+													</div>                                                
+												</div> 
+											</div>                                      
+										</div> 
+									</div>
+									<a class="left carousel-control"
+											href="#myCarousel"
+											data-slide="prev"> 
+								<i class="glyphicon glyphicon-chevron-left"> 
+								</i> 
+								</a> 
+									<a class="right carousel-control" 
+									href="#myCarousel" 
+									data-slide="next"> 
+									<i class="glyphicon glyphicon-chevron-right"> 
+									</i> 
+								</a> 
+						
+								</div> 
+							</div> 						
+						</div>
+					
 				</div>
 			</section>
-            <section class="spacer">			
-				<div class="testimonial-section">
-					<div class="testi-user-img">
-					<div class="swiper-container gallery-thumbs">
-						  <div class="swiper-wrapper">
-								  <div class="swiper-slide">
-										<img class="u3" src="https://md-aqil.github.io/images/2091127763_1_1_1.jpg" alt="">
-									</div>
-						  <div class="swiper-slide">
-							  <img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-						  </div>
-						  <div class="swiper-slide">
-						  <img class="u2" src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
-						  </div>
-					  
-						  <div class="swiper-slide">
-						  <img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-						  </div>
-                          
-						  
-						  </div>
-					  </div>
-					</div>
-					<div class="user-saying">
-						  <div class="swiper-container testimonial">
-								<!-- Additional required wrapper -->
-								<div class="swiper-wrapper ">
-									<!-- Slides -->
-									<div class="swiper-slide">
-										<div class="quote">
-												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-											<p>
-													“This is best and biggest unified platform
-											for instant online admission. We can easily
-											take admission for any course in any institute..“
-											</p>
-											<div class="name">-Ramkishor Verma-</div>
-											<div class="designation">University Student</div>
-											
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="quote">
-											<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+			<section class="content-box box-4" id="team">
+			<div class="skew-c"></div>
+				<div class="zerogrid-fluid">
+					<div class="wrap-box">
+						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+							<h2>Our Team</h2>
+							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
+						</div>
+						<section class="spacer">
 										
-											<p>
-													“This is best and biggest unified platform
-											for instant online admission. We can easily
-											take admission for any course in any institute..“
-											</p>
-											<div class="name">-Ramkishor Verma-</div>
-											<div class="designation">University Student</div>
-											
-										</div>
+							<div class="testimonial-section">
+								<div class="testi-user-img">
+								<div class="swiper-container gallery-thumbs">
+									<div class="swiper-wrapper">
+											<div class="swiper-slide">
+													<img class="u3" src="https://md-aqil.github.io/images/2091127763_1_1_1.jpg" alt="">
+												</div>
+									<div class="swiper-slide">
+										<img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
 									</div>
 									<div class="swiper-slide">
-										<div class="quote">
-											<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-												
-											<p>
-													“This is best and biggest unified platform
-											for instant online admission. We can easily
-											take admission for any course in any institute..“
-											</p>
-											<div class="name">-Ramkishor Verma-</div>
-											<div class="designation">University Student</div>
-											
-										</div>
+									<img class="u2" src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
 									</div>
+								
 									<div class="swiper-slide">
-											<div class="quote">
-												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-												
-												<p>
-														“This is best and biggest unified platform
-												for instant online admission. We can easily
-												take admission for any course in any institute..“
-												</p>
-												<div class="name">-Ramkishor Verma-</div>
-												<div class="designation">University Student</div>
-												
-											</div>
-										</div>   
+									<img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
+									</div>
+									
+									
+									</div>
 								</div>
-								<!-- If we need pagination -->
-								<div class="swiper-pagination swiper-pagination-white"></div>
+								</div>
+								<div class="user-saying">
+									<div class="swiper-container testimonial">
+											<!-- Additional required wrapper -->
+											<div class="swiper-wrapper ">
+												<!-- Slides -->
+												<div class="swiper-slide">
+													<div class="quote">
+															<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+														<p>
+																“This is best and biggest unified platform
+														for instant online admission. We can easily
+														take admission for any course in any institute..“
+														</p>
+														<div class="name">-Ramkishor Verma-</div>
+														<div class="designation">University Student</div>
+														
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="quote">
+														<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+													
+														<p>
+																“This is best and biggest unified platform
+														for instant online admission. We can easily
+														take admission for any course in any institute..“
+														</p>
+														<div class="name">-Ramkishor Verma-</div>
+														<div class="designation">University Student</div>
+														
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="quote">
+														<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+															
+														<p>
+																“This is best and biggest unified platform
+														for instant online admission. We can easily
+														take admission for any course in any institute..“
+														</p>
+														<div class="name">-Ramkishor Verma-</div>
+														<div class="designation">University Student</div>
+														
+													</div>
+												</div>
+												<div class="swiper-slide">
+														<div class="quote">
+															<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+															
+															<p>
+																	“This is best and biggest unified platform
+															for instant online admission. We can easily
+															take admission for any course in any institute..“
+															</p>
+															<div class="name">-Ramkishor Verma-</div>
+															<div class="designation">University Student</div>
+															
+														</div>
+													</div>   
+											</div>
+											<!-- If we need pagination -->
+											<div class="swiper-pagination swiper-pagination-white"></div>
+										</div>
+								</div>
 							</div>
+						</section>
 					</div>
 				</div>
 			</section>
@@ -549,7 +561,7 @@ margin-bottom: 30px;
 			
 
 			<!-----------------content-box-7-------------------->
-			<section class="content-box box-7">
+			<section class="content-box box-7">				
 				<div class="zerogrid-fluid">
 					<div class="wrap-box"><!--Start Box-->
 						<div class="content wow fadeInLeft" data-wow-delay=".1s" data-wow-duration="1s">

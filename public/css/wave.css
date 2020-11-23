@@ -13,7 +13,7 @@ header .wave {
     bottom: 0;
     left: 0;
     background: url(../images/wave.png);
-    /* animation: animate 10s linear infinite; */
+    animation: animate 10s linear infinite;
 }
 header .wave:before {
     content: "";
@@ -24,7 +24,7 @@ header .wave:before {
     top: 0;
     left: 0;
     opacity: 0.8;
-    /* animation: animate-reverse 10s linear infinite; */
+    animation: animate-reverse 10s linear infinite;
 }
 header .wave:after {
     content: "";
@@ -36,7 +36,7 @@ header .wave:after {
     left: 0;
     opacity: 0.6;
     animation-delay: -5s;
-    /* animation: animate 20s linear infinite; */
+    animation: animate 20s linear infinite;
 }
 @keyframes animate {
     0% {
