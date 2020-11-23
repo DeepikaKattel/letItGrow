@@ -50,7 +50,7 @@ class ContactUsController extends Controller
             'message' => $request['message'],
         );                 
    
-        Mail::send(['text'=>'mail.contact'], $data, function($message) {
+        Mail::send(['text'=>'mail.contact'], 'data',$this->data, function($message) {
             $message->to('easycarservicenepal@gmail.com')->subject
                 ('Someone wants to contact you');            
         });

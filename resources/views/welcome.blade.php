@@ -289,6 +289,16 @@ width: 38px;
 display: block;
 margin-bottom: 30px;
 }
+.sticky-top {
+    transition: all 0.25s ease-in;
+}
+
+/* style for when sitcky is applied */
+.stuck .sticky-top {
+    background-color: #222 !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
 </style>
 </head>
 @include('pageLoader')
@@ -348,7 +358,9 @@ margin-bottom: 30px;
             </div>            
         </header>
         <div id="menu">
-            @include('partials.header')
+			<nav class="navbar navbar-fixed-top">
+            	@include('partials.header')
+			</nav>
         </div>
     
 
@@ -440,8 +452,7 @@ margin-bottom: 30px;
 					</div>
 				</div>
 			</section>
-            <section class="spacer">
-			
+            <section class="spacer">			
 				<div class="testimonial-section">
 					<div class="testi-user-img">
 					<div class="swiper-container gallery-thumbs">
@@ -466,72 +477,68 @@ margin-bottom: 30px;
 					</div>
 					<div class="user-saying">
 						  <div class="swiper-container testimonial">
-								  <!-- Additional required wrapper -->
-								  <div class="swiper-wrapper ">
-									  <!-- Slides -->
-									  <div class="swiper-slide">
-										  <div class="quote">
-												  <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-											  <p>
-													  “This is best and biggest unified platform
-											  for instant online admission. We can easily
-											  take admission for any course in any institute..“
-											  </p>
-											  <div class="name">-Ramkishor Verma-</div>
-											  <div class="designation">University Student</div>
-											  
-										  </div>
-									  </div>
-									  <div class="swiper-slide">
-										  <div class="quote">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper ">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<div class="quote">
 												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+											<p>
+													“This is best and biggest unified platform
+											for instant online admission. We can easily
+											take admission for any course in any institute..“
+											</p>
+											<div class="name">-Ramkishor Verma-</div>
+											<div class="designation">University Student</div>
 											
-											  <p>
-													  “This is best and biggest unified platform
-											  for instant online admission. We can easily
-											  take admission for any course in any institute..“
-											  </p>
-											  <div class="name">-Ramkishor Verma-</div>
-											  <div class="designation">University Student</div>
-											  
-										  </div>
-									  </div>
-									  <div class="swiper-slide">
-										  <div class="quote">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="quote">
+											<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+										
+											<p>
+													“This is best and biggest unified platform
+											for instant online admission. We can easily
+											take admission for any course in any institute..“
+											</p>
+											<div class="name">-Ramkishor Verma-</div>
+											<div class="designation">University Student</div>
+											
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="quote">
+											<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+												
+											<p>
+													“This is best and biggest unified platform
+											for instant online admission. We can easily
+											take admission for any course in any institute..“
+											</p>
+											<div class="name">-Ramkishor Verma-</div>
+											<div class="designation">University Student</div>
+											
+										</div>
+									</div>
+									<div class="swiper-slide">
+											<div class="quote">
 												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-												  
-											  <p>
-													  “This is best and biggest unified platform
-											  for instant online admission. We can easily
-											  take admission for any course in any institute..“
-											  </p>
-											  <div class="name">-Ramkishor Verma-</div>
-											  <div class="designation">University Student</div>
-											  
-										  </div>
-									  </div>
-									  <div class="swiper-slide">
-											  <div class="quote">
-													<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-												 
-												  <p>
-														  “This is best and biggest unified platform
-												  for instant online admission. We can easily
-												  take admission for any course in any institute..“
-												  </p>
-												  <div class="name">-Ramkishor Verma-</div>
-												  <div class="designation">University Student</div>
-												  
-											  </div>
-										  </div>                                      
-										  
-									  
-									  
-								  </div>
-								  <!-- If we need pagination -->
-								  <div class="swiper-pagination swiper-pagination-white"></div>
-							  
-							  </div>
+												
+												<p>
+														“This is best and biggest unified platform
+												for instant online admission. We can easily
+												take admission for any course in any institute..“
+												</p>
+												<div class="name">-Ramkishor Verma-</div>
+												<div class="designation">University Student</div>
+												
+											</div>
+										</div>   
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination swiper-pagination-white"></div>
+							</div>
 					</div>
 				</div>
 			</section>
@@ -662,7 +669,7 @@ var galleryTop = new Swiper('.swiper-container.testimonial', {
 	  }
   });
   
-  </script>
+  </script>  
 
 </div>
 </body>

@@ -1,9 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400, 700);
 #menu #cssmenu {
-    background: #c9fcff;
+    background: white;
 }
 #menu #cssmenu > ul > li > a {
     color: #4c6792;
+    margin-left: 100px;
 }
 #cssmenu,
 #cssmenu ul,
@@ -22,6 +23,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 #cssmenu:after,
 #cssmenu > ul:after {
     content: ".";
@@ -57,20 +59,20 @@
 }
 #cssmenu > ul > li > a {
     padding: 17px;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 1px;
     margin-right: 20px;
     margin-left: 10px;
     text-decoration: none;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
 }
 #cssmenu > ul > li:hover > a {
     color: #ffffff;
 }
 #cssmenu > ul > li.has-sub > a {
-    padding-right: 30px;
+    padding-right: 20px;
 }
 #cssmenu > ul > li.has-sub > a:after {
     position: absolute;

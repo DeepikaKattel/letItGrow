@@ -109,12 +109,11 @@
                                                 <input type="email" name="email" required="true" placeholder="Your Email"/>
                                             </label>
 
-                                            <label for="field5">
-                                                <textarea name="message" id="message" class="textarea-field" required="true" placeholder="Message"></textarea>
+                                            <label>
+                                                <textarea name="message" id="message" class="textarea-field" required="true" placeholder="Message" cols="48"></textarea>
                                             </label>
 
                                              <button class="button button-skin">Submit</button>
-
                                         </form>
 									</div>
 								</div>
