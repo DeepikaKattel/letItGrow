@@ -62,11 +62,17 @@ class CareerController extends Controller
                 'email' => $request['email'],
                 'address' =>$request['address'],
                 'phoneNumber' =>$request['phoneNumber'],
-                'cv'=> $request['cv'],
+                'cv'=>$request->file('cv'),
             );
           
            
-            Mail::to("easycarservicenepal@gmail.com")->send(new SendMail($data));
+            Mail::to("easycarservicenepal@gmail.com")
+            ->send(new SendMail($data));
+            // ->attach($data['cv']->getRealPath(),array(
+            //     'as' => $data['cv']->getClientOriginalName(),
+            //     'mime' => $data['cv']->getMimeType()
+            // )
+            // );
             return redirect()->back()->with("success", "The record has been stored. We will contact you as soon as possible.");
         } else {
             return redirect()->back()->with("error", "There is an error");

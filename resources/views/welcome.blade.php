@@ -297,6 +297,10 @@ margin-bottom: 30px;
 	color:white;	
 }
 
+.img-responsive:hover{
+	transform: scaleX(-1);
+}
+
 </style>
 </head>
 @include('pageLoader')
@@ -382,7 +386,7 @@ margin-bottom: 30px;
 										<div class="item active"> 
 											<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
 												<div class="portfolio-box zoom-effect">
-													<img src="{{asset('images/mobileApplication.jpg')}}" class="img-responsive" alt="" style="height:325px;filter:blur(2px);-webkit-filter: blur(2px)">
+													<img src="{{asset('images/mobileApplication.jpg')}}" class="img-responsive" alt="" style="height:325px;filter:blur(2px);-webkit-filter: blur(2px);" >
 													<div class="portfolio-box-caption">
 														<div class="portfolio-box-caption-content">
 															<div class="project-name">
