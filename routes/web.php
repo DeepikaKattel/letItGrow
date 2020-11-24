@@ -42,3 +42,6 @@ Route::get('/adminAbout/destroy/{id}', 'App\Http\Controllers\Admin\AboutControll
 
 Route::resource('adminVision','App\Http\Controllers\Admin\VisionController');
 Route::get('/adminVision/destroy/{id}', 'App\Http\Controllers\Admin\VisionController@destroy')->name('v.destroy');
+
+Route::resource('adminServices','App\Http\Controllers\Admin\ServicesController');
+Route::get('/adminServices/destroy/{id}', 'App\Http\Controllers\Admin\ServicesController@destroy')->name('s.destroy');

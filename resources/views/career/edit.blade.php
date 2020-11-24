@@ -37,7 +37,7 @@
 								<div class="wow fadeInLeft" data-wow-delay=".1s" data-wow-duration="1s">
 									<h5>Department:</h5><p>{{$adminCareer->department}}</p>
 									<h5>Designation:</h5><p>{{$adminCareer->designation}}</p>
-									<h5>Job Description:</h5><p>{{$adminCareer->job_description}}</p>									
+									<h5>Job Description:</h5><p>{!!$adminCareer->job_description!!}</p>									
 									<h5>Number of Vacancies</h5><p>{{$adminCareer->vacancyNumber}}</p>									
 								</div>
 							</div>
@@ -71,11 +71,9 @@
                                             <label>
                                                 <input type="text" name="phoneNumber" required="true" placeholder="Phone Number"/>
                                             </label>
-
-
-                                             <label>Upload CV:</label>
-                                             <input type="file" name="cv" id="cv" required="true">
-
+                                             <label>Upload CV:
+                                             	<input type="file" name="cv" id="cv" required="true">
+											 </label>
                                              <label>
                                                 <input type="text" name="designation_id" required="true" value={{$adminCareer->id}} hidden>
                                             </label>

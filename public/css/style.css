@@ -566,7 +566,7 @@ header .wrap-header {
 /* ---------------------------------------------------------------------------- */
 #page-content {
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     z-index: 1;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.7) 0 105px 90px -90px;
@@ -1332,6 +1332,7 @@ footer .bottom-social i.fa {
     margin: auto;
     overflow: hidden;
     max-width: 400px;
+    height: 325px;
 }
 
 /****** Zoom Effect ******/

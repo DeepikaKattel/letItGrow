@@ -379,9 +379,9 @@ margin-bottom: 30px;
 							<h2>Our Services</h2>
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
 						</div>
-							<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">
+							<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s"  style="max-height:325px;">
 								<!-- bootstrap card with row name myCarousel as row 1-->
-								<div class="carousel slide" id="myCarousel"> 
+								<div class="carousel slide" id="myCarousel" > 
 									<div class="carousel-inner"> 
 										<div class="item active"> 
 											<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
