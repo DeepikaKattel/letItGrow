@@ -10,6 +10,6 @@ class About extends Model
     use HasFactory;
     protected $table = 'abouts';
     protected $fillable = [
-        'heading', 'description'
+        'heading', 'description', 'image'
     ];
 }

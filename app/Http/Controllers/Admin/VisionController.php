@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Vision;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 
 class VisionController extends Controller
 {
@@ -39,7 +40,14 @@ class VisionController extends Controller
     {
         $vision = new Vision();
         $vision->heading = request('heading');
-        $vision->description = request('description');         
+        $vision->description = request('description');    
+        if ($request->hasFile('image')) {
+            $image = $request->image;
+            $fileName = rand() . "." . $image->getClientOriginalExtension();
+            $destination_path = public_path("visionImage/");
+            $image->move($destination_path, $fileName);
+            $vision->image = 'visionImage/' . $fileName;
+        }          
         $vision->save();
         $visionSave = $vision->save();
         if($visionSave) {
@@ -83,7 +91,18 @@ class VisionController extends Controller
     {
         $vision= Vision::find($id);
         $vision->heading = request('heading');
-        $vision->description = request('description');         
+        $vision->description = request('description');    
+        if ($request->hasFile("image")) {
+            if ($vision->image) {
+                File::delete(public_path($vision->image));
+            }
+            $image = $request->image;
+            $fileName = time() . "." . $image->getClientOriginalExtension();
+            $destination_path = public_path("visionImage/");
+            $image->move($destination_path, $fileName);
+
+            $vision->image = 'visionImage/' . $fileName;
+        }         
         $vision->save();
         $visionSave = $vision->save();
         if($visionSave) {

@@ -44,7 +44,12 @@
                   <div class="form-group">
                     <label for="vision"> Description</label>
                     <textarea class="form-control" id="description" name="description" placeholder="Description"></textarea>
-                  </div>                
+                  </div>   
+
+                   <div class="form-group">
+                      <label>Image</label>
+                      <input type="file" name="image" id="image" class="form-control" required>
+                  </div>             
                   
                 </div>
                 <!-- /.card-body -->

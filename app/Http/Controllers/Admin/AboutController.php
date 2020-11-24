@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\About;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 
 class AboutController extends Controller
 {
@@ -40,7 +41,14 @@ class AboutController extends Controller
     {
         $about = new About();
         $about->heading = request('heading');
-        $about->description = request('description');         
+        $about->description = request('description');
+        if ($request->hasFile('image')) {
+            $image = $request->image;
+            $fileName = rand() . "." . $image->getClientOriginalExtension();
+            $destination_path = public_path("aboutImage/");
+            $image->move($destination_path, $fileName);
+            $about->image = 'aboutImage/' . $fileName;
+        }            
         $about->save();
         $aboutSave = $about->save();
         if($aboutSave) {
@@ -84,7 +92,18 @@ class AboutController extends Controller
     {
         $about= About::find($id);
         $about->heading = request('heading');
-        $about->description = request('description');         
+        $about->description = request('description');
+        if ($request->hasFile("image")) {
+            if ($about->image) {
+                File::delete(public_path($about->image));
+            }
+            $image = $request->image;
+            $fileName = time() . "." . $image->getClientOriginalExtension();
+            $destination_path = public_path("aboutImage/");
+            $image->move($destination_path, $fileName);
+
+            $about->image = 'aboutImage/' . $fileName;
+        }    
         $about->save();
         $aboutSave = $about->save();
         if($aboutSave) {

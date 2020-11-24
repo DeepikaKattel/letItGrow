@@ -10,6 +10,6 @@ class Vision extends Model
     use HasFactory;
     protected $table = 'visions';
     protected $fillable = [
-        'heading', 'description'
+        'heading', 'description', 'image'
     ];
 }

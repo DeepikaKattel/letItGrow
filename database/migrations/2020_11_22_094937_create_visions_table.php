@@ -16,7 +16,8 @@ class CreateVisionsTable extends Migration
         Schema::create('visions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('heading');
-            $table->longText('description');        
+            $table->longText('description');  
+            $table->string('image');      
             $table->timestamps();
         });
     }

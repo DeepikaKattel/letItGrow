@@ -45,6 +45,7 @@
                            <td>{{$loop->iteration}}</td>
                            <td>{{$v->heading}}</td>
                            <td>{{$v->description}}</td>
+                           <td><img src="{{'visionImage/'.$v->image}}" alt="" style="height:30px;width:30px;"></td>
                                                       
                            <td id="none">
                                <a href="{{route('adminVision.edit',$v->id)}}"><i class="fa fa-lg fa-edit"></i></a>
