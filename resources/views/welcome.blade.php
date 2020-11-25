@@ -43,6 +43,9 @@
     <link href="{{asset('owl-carousel/owl.carousel.css')}}" rel="stylesheet">
     <!-- <link href="{{asset('owl-carousel/owl.theme.css')}}" rel="stylesheet"> -->
     <link href="{{asset('css/quoteCarousel.css')}}" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
@@ -268,6 +271,35 @@ height: 100%;
 .testi-user-img {
 width: 40%;
 }
+@media only screen and (max-width: 1100px) {
+    .spacer .testimonial-section .user-saying {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .spacer .testimonial-section .user-saying {
+        padding: 30px 40px;
+		font-size: 22px;		
+    }
+    .spacer .testimonial-section .user-saying:before,
+    .spacer .testimonial-section .user-saying:after {
+        width: 25px;
+        height: 25px;
+        font-size: 47px;
+    }
+}
+@media only screen and (max-width: 690px) {
+    .spacer .testimonial-section .user-saying {
+        padding: 10px 20px;
+		font-size: 20px;
+		max-width: 400px;
+		height:400px;
+    }
+    .spacer .testimonial-section .user-saying:before,
+    .spacer .testimonial-section .user-saying:after {
+        font-size: 19px;
+    }
+}
 .testimonial-section {
 display: -webkit-box;
 display: -ms-flexbox;
@@ -300,6 +332,33 @@ margin-bottom: 30px;
 .img-responsive:hover{
 	transform: scaleX(-1);
 }
+h2{
+	font-weight:800;
+	position:relative;
+	font-size:50px;
+}
+h2:before{
+	content:attr(REFL-TEXT);
+	position:absolute;	
+	bottom:10%;
+	left:40%;
+	transform: rotateX(180);
+	line-height:52px;
+	transform-origin:bottom;
+	background:linear-gradient(to top, #fff, transparent);
+	-webkit-background-clip:text;
+	font-size:50px;
+	color:#dae2e3;
+	opacity:0.4;
+	margin-bottom:10px;
+}
+#services h2:before{	
+	left:30%;	
+}
+#team h2:before{	
+	left:38%;	
+}
+
 
 </style>
 </head>
@@ -363,7 +422,8 @@ margin-bottom: 30px;
 			<nav class="navbar navbar-fixed-top">
             	@include('partials.header')
 			</nav>
-        </div>
+		</div>
+		
     
 
 
@@ -371,12 +431,31 @@ margin-bottom: 30px;
 	<section id="page-content" class="index-page">
 		<div class="wrap-container">
 			<!-----------------content-box-4-------------------->
-			<section class="content-box box-4">
-			<div class="skew-cc"></div>	
+			<section class="content-box box-3 box-style-1" id="about">				
+			<div class="zerogrid">
+				<div class="wrap-box"><!--Start Box-->
+					<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+						<h2 REFL-TEXT="About">About</h2>						
+					</div>
+					<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">					
+									
+						<div class="entry-content">
+							<div class="excerpt">
+							<p>Let IT grow Pvt. Ltd. is a company growing in the field of information technology. The organization is a team of driven young and experienced minds that are passionate to provide utmost customer satisfaction in terms of product and service delivery.
+								The company mostly undertakes project-based business and primarily focuses on providing software-based services to its customers. However, it serves clients with system related services as well as other related needs. Apart from serving for commercial needs, Let IT grow also provides professional training to freshers/individuals and prepare them for the outer world exposure on the related field.
+							As the name suggests, we aim to maximize the market potential in IT by providing excellent products and services in the related field along with generating skillful manpower.</p>
+						</div>						
+							
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="content-box box-4" style="margin-bottom:50px" id="services">
+			
 				<div class="zerogrid-fluid">
 					<div class="wrap-box">									
 						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
-							<h2>Our Services</h2>
+							<h2 REFL-TEXT="Our Services" >Our Services</h2>
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
 						</div>
 							<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s"  style="max-height:325px;">
@@ -457,11 +536,11 @@ margin-bottom: 30px;
 				</div>
 			</section>
 			<section class="content-box box-4" id="team">
-			<div class="skew-c"></div>
+			<!-- <div class="skew-c"></div> -->
 				<div class="zerogrid-fluid">
 					<div class="wrap-box">
 						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
-							<h2>Our Team</h2>
+							<h2 REFL-TEXT="Our Team">Our Team</h2>
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
 						</div>
 						<section class="spacer">

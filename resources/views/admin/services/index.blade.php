@@ -46,7 +46,7 @@
                            <td>{{$loop->iteration}}</td>
                            <td>{{$s->heading}}</td>
                            <td>{{$s->description}}</td>
-                           <td><img src="{{'servicesImage/'.$s->image}}" alt="" style="height:30px;width:30px;"></td>
+                           <td><img src="{{asset("$s->image")}}" alt="" style="height:30px;width:30px;"></td>
                            <td id="none">
                                <a href="{{route('adminServices.edit',$s->id)}}"><i class="fa fa-lg fa-edit"></i></a>
                                @method('DELETE')

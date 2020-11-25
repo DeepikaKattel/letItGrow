@@ -5,6 +5,22 @@
     padding: 2rem;
     overflow: hidden;
 }
+@media (max-width: 900px) {
+    .containerRobot {
+        max-width: 300px;
+        margin-left: 200px;
+    }
+    .head {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (max-width: 500px) {
+    .containerRobot {
+        max-width: 100px;
+        margin-left: 100px;
+    }
+}
 
 /* The Robot */
 .robot {
