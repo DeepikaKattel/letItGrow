@@ -19,8 +19,9 @@
                  </li>
               </ul>
            </li>--}}
-           <li><a href="{{route('about')}}"><span>About</span></a></li>
+           <li><a href="{{route('about')}}"><span>about</span></a></li>
            <li><a href="{{route('career.index')}}"><span>Career</span></a></li>
+           <!-- <li><a href="{{url('/')}}"><img src="{{asset('images/logo.png')}}" style="width:200px; height:100px;margin-bottom:30px;background:transparent"></a></li> -->
            <li><a href="{{route('vision')}}"><span>Vision</span></a></li>
            <li class="last"><a href="{{route('contact')}}"><span>Contact</span></a></li>
            <!-- @if (Route::has('login'))

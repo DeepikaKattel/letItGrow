@@ -1,11 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400, 700);
 #menu #cssmenu {
-    background: white;
+    background: transparent;
 }
 #menu #cssmenu > ul > li > a {
-    color: #4c6792;
-    margin-left: 100px;
+    color: white;
+    margin-left: 70px;
 }
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,

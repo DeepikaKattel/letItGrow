@@ -341,7 +341,7 @@ h2:before{
 	content:attr(REFL-TEXT);
 	position:absolute;	
 	bottom:10%;
-	left:40%;
+	justify-content:center;
 	transform: rotateX(180);
 	line-height:52px;
 	transform-origin:bottom;
@@ -352,12 +352,7 @@ h2:before{
 	opacity:0.4;
 	margin-bottom:10px;
 }
-#services h2:before{	
-	left:30%;	
-}
-#team h2:before{	
-	left:38%;	
-}
+
 
 
 </style>
@@ -450,7 +445,7 @@ h2:before{
 				</div>
 			</div>
 		</section>
-		<section class="content-box box-4" style="margin-bottom:50px" id="services">
+		<!-- <section class="content-box box-4" style="margin-bottom:50px" id="services">
 			
 				<div class="zerogrid-fluid">
 					<div class="wrap-box">									
@@ -460,7 +455,7 @@ h2:before{
 						</div>
 							<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s"  style="max-height:325px;">
 								<!-- bootstrap card with row name myCarousel as row 1-->
-								<div class="carousel slide" id="myCarousel" > 
+								<!-- <div class="carousel slide" id="myCarousel" > 
 									<div class="carousel-inner"> 
 										<div class="item active"> 
 											<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
@@ -534,8 +529,8 @@ h2:before{
 						</div>
 					
 				</div>
-			</section>
-			<section class="content-box box-4" id="team">
+			</section> --> -->
+			<section class="content-box box-3 box-style-1 spacer" id="team">
 			<!-- <div class="skew-c"></div> -->
 				<div class="zerogrid-fluid">
 					<div class="wrap-box">
@@ -543,7 +538,7 @@ h2:before{
 							<h2 REFL-TEXT="Our Team">Our Team</h2>
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
 						</div>
-						<section class="spacer">
+						
 										
 							<div class="testimonial-section">
 								<div class="testi-user-img">
@@ -633,7 +628,7 @@ h2:before{
 										</div>
 								</div>
 							</div>
-						</section>
+						
 					</div>
 				</div>
 			</section>
