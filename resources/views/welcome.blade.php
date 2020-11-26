@@ -455,7 +455,7 @@ h2:before{
 			<section class="content-box box-4" id="services">			
 				<div class="zerogrid-fluid">
 					<div class="wrap-box">									
-						<div class="header wow slideInUp" data-wow-delay=".1s" data-wow-duration="1s">
+						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
 							<h2 REFL-TEXT="Our Services" >Our Services</h2>
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
 						</div>

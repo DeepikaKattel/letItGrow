@@ -60,6 +60,14 @@
                                     </div>
                                 @endif
                               <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>SN</th>
+                                        <th>Post</th>
+                                        <th>Designation</th>
+                                        <th>View</th>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr>
                                       @foreach($career as $c)

@@ -564,10 +564,14 @@ header .wrap-header {
 /* ---------------------------------------------------------------------------- */
 /* ----------------------------------Container--------------------------------- */
 /* ---------------------------------------------------------------------------- */
+body {
+    overflow-x: hidden;
+}
 #page-content {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    margin-bottom: 0px;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.7) 0 105px 90px -90px;
 }
@@ -586,7 +590,7 @@ header .wrap-header {
 }
 .content-box .header {
     text-align: center;
-    margin: 0px 0 90px;
+    margin: 0px 0 10px;
     text-transform: uppercase;
 }
 .content-box .header h2 {
@@ -1629,7 +1633,7 @@ footer .bottom-social i.fa {
     margin-right: 40px;
 }
 
-.card {
+.wrapper .card {
     width: 320px;
     height: 450px;
     position: relative;
@@ -1639,7 +1643,7 @@ footer .bottom-social i.fa {
     cursor: pointer;
 }
 
-.card > div {
+.wrapper .card > div {
     position: absolute;
     width: 320px;
     height: 450px;
@@ -1662,15 +1666,15 @@ footer .bottom-social i.fa {
     border-radius: 0 0 3px 3px;
 }
 
-.card:hover {
+.wrapper .card:hover {
     transform: translateZ(-160px) rotateY(-90deg);
 }
 
-.card:hover .front {
+.wrapper .card:hover .front {
     opacity: 0;
 }
 
-.card:hover .right {
+.wrapper .card:hover .right {
     opacity: 1;
 }
 
@@ -1700,11 +1704,11 @@ img {
     }
 }
 
-.card:hover ~ .img-wrapper img {
+.wrapper .card:hover ~ .img-wrapper img {
     transform: scale(0.9) translateX(77%) translateY(90%) rotateZ(80deg);
 }
 
-button {
+.wrapper button {
     position: absolute;
     right: 21px;
     bottom: 34px;
@@ -1728,24 +1732,16 @@ button {
     transform-origin: right bottom;
 }
 
-.card:hover button {
+.wrapper .card:hover button {
     transform: scale(1) skewY(0);
 }
 
-.card:not(:hover) button {
+.wrapper .card:not(:hover) button {
     opacity: 0;
 }
 
 button:hover {
     background-position: left;
-}
-
-.price {
-    position: absolute;
-    bottom: 34px;
-    left: 21px;
-    font-size: 34px;
-    opacity: 0.34;
 }
 
 @keyframes fadeIn {
@@ -1759,4 +1755,21 @@ button:hover {
     body {
         transform: scale(0.67);
     }
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+*::-webkit-scrollbar-track {
+    background: black;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid grey;
 }

@@ -22,7 +22,7 @@ Route::get('/logout', [App\Http\Controllers\HomeController::class, 'logout'])->n
 Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('dashboard');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/wave', [App\Http\Controllers\HomeController::class, 'wave'])->name('wave');
-Route::get('/about', [App\Http\Controllers\FrontEndController::class, 'about'])->name('about');
+// Route::get('/about', [App\Http\Controllers\FrontEndController::class, 'about'])->name('about');
 Route::get('/contact', [App\Http\Controllers\FrontEndController::class, 'contact'])->name('contact');
 Route::post('/contactStore', [App\Http\Controllers\ContactUsController::class, 'store'])->name('contact.store');
 Route::get('/vision', [App\Http\Controllers\FrontEndController::class, 'vision'])->name('vision');
