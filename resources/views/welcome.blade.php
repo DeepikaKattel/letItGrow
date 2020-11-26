@@ -378,13 +378,17 @@ h2:before{
                         <div class="hero-content">
                             <!-- <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4> -->                            
                             <!-- <img src="{{asset('images/logo.png')}}"class="wow fadeIn"style="height:200px;width:500px;box-shadow:2px 2px 2px 2px"/> -->
-                            <h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px black;color:#4c6792"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:rgba(40,215,226)">IT</span>Grow</h1>
+							<div class="img-wrapper" style="margin-top:250px;margin-right:650px;">
+								<h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px 5px #dae2e3;color:#4c6792"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:rgba(40,215,226)">IT</span>Grow</h1>
+								<!-- <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/577128/deck.png' alt=''>     -->
+								<img src="{{asset('images/logo.png')}}" alt='' style="margin-bottom:600px;margin-left:500px;">
+							</div>   
                             
                             <!-- <a href="{{asset('about')}}" class="button button-skin wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Read More</a> -->
                         </div>
                         </div>
                         <!-- <canvas id="c"></canvas> -->
-                        <div class="containerRobot">
+                        <!-- <div class="containerRobot">
 							<div class="robot">
 								<div class="head">
 								<div class="eyes">
@@ -402,10 +406,11 @@ h2:before{
 								<div class="right-leg"></div>
 								</div>
 							</div>
-                        </div>          
+                        </div>    -->      
                         
-                    </div>
-                    <div class="wave">                           
+					</div>
+					
+                    <div class="wave"> 					                       
                     </div>
                     <!---Scroller--->                    
                     <div id="scroll-page-content">
@@ -471,10 +476,7 @@ h2:before{
 												<button><a href="#about" style="text-decoration:none;cursor:pointer;color:black">Read More</button>
 											</div>
 										</div>
-										<!-- <div class="img-wrapper">
-											<!-- <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/577128/deck.png' alt=''>     -->
-											<!-- <img src="{{asset('images/logo.png')}}" alt=''>    
-										</div> -->
+										
 									</div>
 									<div class="wrapper">
 										<div class="card" style="background: url('/images/webDesign.jpg') 320px 450px;">
