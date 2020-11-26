@@ -336,12 +336,14 @@ h2{
 	font-weight:800;
 	position:relative;
 	font-size:50px;
+	
+	
 }
+/* 36e3c7 */
 h2:before{
-	content:attr(REFL-TEXT);
-	position:absolute;	
+	content:attr(REFL-TEXT);	
+	position:absolute;		
 	bottom:10%;
-	justify-content:center;
 	transform: rotateX(180);
 	line-height:52px;
 	transform-origin:bottom;
@@ -352,9 +354,15 @@ h2:before{
 	opacity:0.4;
 	margin-bottom:10px;
 }
-
-
-
+#about h2:before{
+	right:40%;
+}
+#services h2:before{
+	right:30%;
+}
+#team h2:before{
+	right:35%;
+}
 </style>
 </head>
 @include('pageLoader')
@@ -368,8 +376,7 @@ h2:before{
                         <!---Hero Content--->
                         <div class="hero-content-wrapper">
                         <div class="hero-content">
-                            <!-- <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4> -->
-                            
+                            <!-- <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4> -->                            
                             <!-- <img src="{{asset('images/logo.png')}}"class="wow fadeIn"style="height:200px;width:500px;box-shadow:2px 2px 2px 2px"/> -->
                             <h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px black;color:#4c6792"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:rgba(40,215,226)">IT</span>Grow</h1>
                             
@@ -427,109 +434,86 @@ h2:before{
 		<div class="wrap-container">
 			<!-----------------content-box-4-------------------->
 			<section class="content-box box-3 box-style-1" id="about">				
-			<div class="zerogrid">
-				<div class="wrap-box"><!--Start Box-->
-					<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
-						<h2 REFL-TEXT="About">About</h2>						
-					</div>
-					<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">					
-									
-						<div class="entry-content">
-							<div class="excerpt">
-							<p>Let IT grow Pvt. Ltd. is a company growing in the field of information technology. The organization is a team of driven young and experienced minds that are passionate to provide utmost customer satisfaction in terms of product and service delivery.
-								The company mostly undertakes project-based business and primarily focuses on providing software-based services to its customers. However, it serves clients with system related services as well as other related needs. Apart from serving for commercial needs, Let IT grow also provides professional training to freshers/individuals and prepare them for the outer world exposure on the related field.
-							As the name suggests, we aim to maximize the market potential in IT by providing excellent products and services in the related field along with generating skillful manpower.</p>
-						</div>						
-							
+				<div class="zerogrid">
+					<div class="wrap-box"><!--Start Box-->
+						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+							<h2 REFL-TEXT="About">About</h2>						
+						</div>
+						<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">					
+										
+							<div class="entry-content">
+								<div class="excerpt">
+								<p>Let IT grow Pvt. Ltd. is a company growing in the field of information technology. The organization is a team of driven young and experienced minds that are passionate to provide utmost customer satisfaction in terms of product and service delivery.
+									The company mostly undertakes project-based business and primarily focuses on providing software-based services to its customers. However, it serves clients with system related services as well as other related needs. Apart from serving for commercial needs, Let IT grow also provides professional training to freshers/individuals and prepare them for the outer world exposure on the related field.
+								As the name suggests, we aim to maximize the market potential in IT by providing excellent products and services in the related field along with generating skillful manpower.</p>
+							</div>						
+								
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- <section class="content-box box-4" style="margin-bottom:50px" id="services">
-			
+			</section>
+			<section class="content-box box-4" id="services">			
 				<div class="zerogrid-fluid">
 					<div class="wrap-box">									
-						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+						<div class="header wow slideInUp" data-wow-delay=".1s" data-wow-duration="1s">
 							<h2 REFL-TEXT="Our Services" >Our Services</h2>
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
 						</div>
-							<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s"  style="max-height:325px;">
-								<!-- bootstrap card with row name myCarousel as row 1-->
-								<!-- <div class="carousel slide" id="myCarousel" > 
-									<div class="carousel-inner"> 
-										<div class="item active"> 
-											<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
-												<div class="portfolio-box zoom-effect">
-													<img src="{{asset('images/mobileApplication.jpg')}}" class="img-responsive" alt="" style="height:325px;filter:blur(2px);-webkit-filter: blur(2px);" >
-													<div class="portfolio-box-caption">
-														<div class="portfolio-box-caption-content">
-															<div class="project-name">
-																Mobile Application Development
-															</div>
-
-															<div class="project-button">
-																<a href="{{asset('about')}}" class="button button-skin">Read More</a>
-															</div>
-														</div>
-													</div>										
-												</div>
+							<div class="content wow slideInLeft" data-wow-delay=".1s" data-wow-duration="1s">
+								<div class="row">								
+									<div class="wrapper">
+										<div class="card" style="background: url('/images/webDevelopment.jpg') 320px 450px;">
+											<div class="front">
+												<!-- <h1 style="color:white">Web<br> Development<br></h1>											 -->
 											</div>
-										</div> 
-										<div class="item"> 
-											<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
-												<div class="portfolio-box zoom-effect">
-													<img src="{{asset('images/webDevelopment.jpg')}}" class="img-responsive" alt="" style="height:325px;filter:blur(2px);-webkit-filter: blur(2px)" >
-													<div class="portfolio-box-caption">
-														<div class="portfolio-box-caption-content">
-															<div class="project-name">
-																Web Development
-															</div>
-
-															<div class="project-button">
-																<a href="{{route('about')}}" class="button button-skin">Read More</a>
-															</div>
-														</div>
-													</div>										
-												</div>
+											<div class="right" style="background: url('/images/webDevelopment.jpg') 320px 450px;">
+												<h1 style="color:white;margin:20px;font-size:28px;font-weight:bolder">Web Development</h1>											
+												<button><a href="#about" style="text-decoration:none;cursor:pointer;color:black">Read More</button>
 											</div>
-										</div> 
-										<div class="item"> 
-											<div class="lg-1-4 md-1-3 sm-1-2" style="margin-left:80px">
-												<div class="portfolio-box zoom-effect">
-													<img src="{{asset('images/webDesign.jpg')}}" class="img-responsive" alt="" style="height:325px;width:500px;filter:blur(2px);-webkit-filter: blur(2px)">
-													<div class="portfolio-box-caption">
-														<div class="portfolio-box-caption-content">
-															<div class="project-name">
-																Web Design
-															</div>
-															<div class="project-button">
-																<a href="{{route('about')}}" class="button button-skin">Read More</a>
-															</div>
-														</div>
-													</div>                                                
-												</div> 
-											</div>                                      
-										</div> 
+										</div>
+										<!-- <div class="img-wrapper">
+											<!-- <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/577128/deck.png' alt=''>     -->
+											<!-- <img src="{{asset('images/logo.png')}}" alt=''>    
+										</div> -->
 									</div>
-									<a class="left carousel-control"
-											href="#myCarousel"
-											data-slide="prev"> 
-								<i class="glyphicon glyphicon-chevron-left"> 
-								</i> 
-								</a> 
-									<a class="right carousel-control" 
-									href="#myCarousel" 
-									data-slide="next"> 
-									<i class="glyphicon glyphicon-chevron-right"> 
-									</i> 
-								</a> 
+									<div class="wrapper">
+										<div class="card" style="background: url('/images/webDesign.jpg') 320px 450px;">
+											<div class="front">
+												<!-- <h1 style="color:white">Web<br> Development<br></h1>											 -->
+											</div>
+											<div class="right" style="background: url('/images/webDesign.jpg') 320px 450px;">
+												<h1 style="color:white;margin:20px;font-size:28px;font-weight:bolder">Web Design</h1>											
+												<button><a href="#about" style="text-decoration:none;cursor:pointer;color:black">Read More</button>
+											</div>
+										</div>
+										<!-- <div class="img-wrapper">
+											<!-- <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/577128/deck.png' alt=''>     -->
+											<!-- <img src="{{asset('images/logo.png')}}" alt=''>    
+										</div> -->
+									</div>
+									<div class="wrapper">
+										<div class="card" style="background: url('/images/mobileApplication.jpg') 320px 450px;">
+											<div class="front">
+												<!-- <h1 style="color:white">Web<br> Development<br></h1>											 -->
+											</div>
+											<div class="right" style="background: url('/images/mobileApplication.jpg') 320px 450px;">
+												<h1 style="color:white;margin:20px;font-size:28px;font-weight:bolder">Mobile Application</h1>											
+												<button><a href="#about" style="text-decoration:none;cursor:pointer;color:black">Read More</button>
+											</div>
+										</div>
+										<!-- <div class="img-wrapper">
+											<!-- <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/577128/deck.png' alt=''>     -->
+											<!-- <img src="{{asset('images/logo.png')}}" alt=''>    
+										</div> -->
+									</div>
+									
+								</div>							
 						
-								</div> 
-							</div> 						
-						</div>
-					
-				</div>
-			</section> --> -->
+							</div> 
+						</div> 						
+					</div>					
+				
+			
 			<section class="content-box box-3 box-style-1 spacer" id="team">
 			<!-- <div class="skew-c"></div> -->
 				<div class="zerogrid-fluid">
@@ -537,11 +521,9 @@ h2:before{
 						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
 							<h2 REFL-TEXT="Our Team">Our Team</h2>
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
-						</div>
-						
-										
-							<div class="testimonial-section">
-								<div class="testi-user-img">
+						</div>									
+						<div class="testimonial-section">
+							<div class="testi-user-img">
 								<div class="swiper-container gallery-thumbs">
 									<div class="swiper-wrapper">
 											<div class="swiper-slide">
@@ -551,92 +533,84 @@ h2:before{
 										<img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
 									</div>
 									<div class="swiper-slide">
-									<img class="u2" src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
-									</div>
-								
-									<div class="swiper-slide">
-									<img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-									</div>
-									
-									
-									</div>
-								</div>
-								</div>
-								<div class="user-saying">
-									<div class="swiper-container testimonial">
-											<!-- Additional required wrapper -->
-											<div class="swiper-wrapper ">
-												<!-- Slides -->
-												<div class="swiper-slide">
-													<div class="quote">
-															<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-														<p>
-																“This is best and biggest unified platform
-														for instant online admission. We can easily
-														take admission for any course in any institute..“
-														</p>
-														<div class="name">-Ramkishor Verma-</div>
-														<div class="designation">University Student</div>
-														
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="quote">
-														<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-													
-														<p>
-																“This is best and biggest unified platform
-														for instant online admission. We can easily
-														take admission for any course in any institute..“
-														</p>
-														<div class="name">-Ramkishor Verma-</div>
-														<div class="designation">University Student</div>
-														
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="quote">
-														<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-															
-														<p>
-																“This is best and biggest unified platform
-														for instant online admission. We can easily
-														take admission for any course in any institute..“
-														</p>
-														<div class="name">-Ramkishor Verma-</div>
-														<div class="designation">University Student</div>
-														
-													</div>
-												</div>
-												<div class="swiper-slide">
-														<div class="quote">
-															<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-															
-															<p>
-																	“This is best and biggest unified platform
-															for instant online admission. We can easily
-															take admission for any course in any institute..“
-															</p>
-															<div class="name">-Ramkishor Verma-</div>
-															<div class="designation">University Student</div>
-															
-														</div>
-													</div>   
-											</div>
-											<!-- If we need pagination -->
-											<div class="swiper-pagination swiper-pagination-white"></div>
+										<img class="u2" src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
 										</div>
+							
+									<div class="swiper-slide">
+										<img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
+									</div>					
+								
 								</div>
 							</div>
-						
+						</div>
+						<div class="user-saying">
+							<div class="swiper-container testimonial">
+									<!-- Additional required wrapper -->
+								<div class="swiper-wrapper ">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<div class="quote">
+												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+											<p>
+													“This is best and biggest unified platform
+											for instant online admission. We can easily
+											take admission for any course in any institute..“
+											</p>
+											<div class="name">-Ramkishor Verma-</div>
+											<div class="designation">University Student</div>
+											
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="quote">
+											<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+										
+											<p>
+													“This is best and biggest unified platform
+											for instant online admission. We can easily
+											take admission for any course in any institute..“
+											</p>
+											<div class="name">-Ramkishor Verma-</div>
+											<div class="designation">University Student</div>
+											
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="quote">
+											<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+												
+											<p>
+													“This is best and biggest unified platform
+											for instant online admission. We can easily
+											take admission for any course in any institute..“
+											</p>
+											<div class="name">-Ramkishor Verma-</div>
+											<div class="designation">University Student</div>
+											
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="quote">
+											<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+											
+											<p>
+													“This is best and biggest unified platform
+											for instant online admission. We can easily
+											take admission for any course in any institute..“
+											</p>
+											<div class="name">-Ramkishor Verma-</div>
+											<div class="designation">University Student</div>
+											
+										</div>
+									</div>   
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination swiper-pagination-white"></div>
+							</div>
+						</div>													
 					</div>
 				</div>
-			</section>
-            
-
-
-
-			
+			</section>		
 
 			<!-----------------content-box-7-------------------->
 			<section class="content-box box-7">				
@@ -689,7 +663,6 @@ h2:before{
 					</div>
 				</div>
 			</section>
-
 		</div>
 	</section>
 
