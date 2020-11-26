@@ -332,20 +332,20 @@ margin-bottom: 30px;
 .img-responsive:hover{
 	transform: scaleX(-1);
 }
+
 h2{
 	font-weight:800;
-	position:relative;
-	font-size:50px;
-	
+	position:relative;	
+	font-size:50px;	
 	
 }
 /* 36e3c7 */
 h2:before{
 	content:attr(REFL-TEXT);	
-	position:absolute;		
-	bottom:10%;
+	position:absolute;
+	bottom:10%;	
 	transform: rotateX(180);
-	line-height:52px;
+	line-height:10px;	
 	transform-origin:bottom;
 	background:linear-gradient(to top, #fff, transparent);
 	-webkit-background-clip:text;
@@ -358,11 +358,12 @@ h2:before{
 	right:40%;
 }
 #services h2:before{
-	right:30%;
+	right:32%;
 }
 #team h2:before{
-	right:35%;
+	right:37%;
 }
+
 </style>
 </head>
 @include('pageLoader')
@@ -380,8 +381,8 @@ h2:before{
                             <!-- <img src="{{asset('images/logo.png')}}"class="wow fadeIn"style="height:200px;width:500px;box-shadow:2px 2px 2px 2px"/> -->
 							<div class="img-wrapper" style="margin-top:250px;margin-right:650px;">
 								<h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px 5px #dae2e3;color:#4c6792"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:rgba(40,215,226)">IT</span>Grow</h1>
-								<!-- <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/577128/deck.png' alt=''>     -->
-								<img src="{{asset('images/logo.png')}}" alt='' style="margin-bottom:600px;margin-left:500px;">
+								
+								<!-- <img src="{{asset('images/logo.png')}}" alt='' style="margin-bottom:600px;margin-left:500px;"> -->
 							</div>   
                             
                             <!-- <a href="{{asset('about')}}" class="button button-skin wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Read More</a> -->
