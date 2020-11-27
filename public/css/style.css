@@ -568,7 +568,7 @@ body {
     z-index: 1;
     margin-bottom: 0px;
     background: white;
-    box-shadow: rgba(0, 0, 0, 0.7) 0 105px 90px -90px;
+    /* box-shadow: rgba(0, 0, 0, 0.7) 0 105px 90px -90px; */
 }
 #container .wrap-container {
     background: #ffffff;
@@ -916,11 +916,27 @@ body {
     margin: 0 20px 30px 0;
     padding-top: 20px;
     float: right;
+    transition: 0.3s;
+}
+.content-box.box-7 i.fa:hover {
+    color: #4c6792;
+    background: white;
+    border: 2px solid #4c6792;
+    transform: translate(0, -10px);
+    -webkit-transform: rotateZ(720deg);
+    -moz-transform: rotateZ(720deg);
+    transform: rotateZ(720deg);
 }
 @media (max-width: 767px) {
     .content-box.box-7 i.fa {
         float: none;
-        margin: 20px 0 10px 0;
+        margin: 20px 10px 10px 0;
+    }
+}
+@media (max-width: 767px) {
+    .content-box.box-7 {
+        float: none;
+        margin-top: 10px;
     }
 }
 
@@ -1042,7 +1058,11 @@ footer a {
     text-shadow: none;
 }
 footer a:hover {
-    color: #fff;
+    color: black;
+}
+footer .bottom-social i.fa:hover {
+    transform: translate(0, -10px);
+    font-size: 2em;
 }
 .widget-title {
     font-weight: bold;
@@ -1125,6 +1145,8 @@ footer .bottom-social {
 footer .bottom-social i.fa {
     font-size: 24px;
     margin-right: 12px;
+    padding: 10px;
+    transition: 0.3s;
 }
 
 .copyright {
@@ -1613,7 +1635,7 @@ footer .bottom-social i.fa {
         height: 80px;
     }
     #services {
-        height: 100px;
+        height: auto;
     }
 }
 /* card flip */

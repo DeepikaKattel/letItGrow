@@ -90,8 +90,98 @@
         }); 
     </script> 
     <style>
+		.our-team{
+    padding-bottom: 20px;
+    text-align: center;
+    display:inline-block;
+}
+.our-team .pic{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: white;
+    padding: 70px 20px 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.our-team .description{
+    font-size: 14px;
+    color: #fff;
+}
+.our-team .pic img{
+    width: 101%;
+    height: 101%;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    transition: all 0.6s ease 0s;
+}
+.our-team:hover .pic img{
+    transform: rotate(-120deg);
+    transform-origin: 95% 40% 0;
+}
+.our-team .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+}
+.our-team .post:after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #eee;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+}
+.our-team .social{
+    padding: 0;
+    margin: 25px 0 0 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.our-team .social li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height:35px;
+    background: #7740ff;
+    font-size: 15px;
+    color: #fff;
+}
+.our-team .social li a:hover{
+    background: #ff595e;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+@media only screen and (max-width: 767px){
+    .our-team{ overflow: hidden; }
+}
+	
+
+/* testimonial */
   
-  :root {
+  /*:root {
       --dark-green: #9cc675;
 --dark-yellow: #e89a3d;
 --extra-light-brown:#fdf0d7;
@@ -160,7 +250,7 @@ background-color: #fff;
 color: var(--text-dark);
 }
 /* common css up */
-
+/*
 .testimonial p {
 font-size: 28px;
 letter-spacing: 0.02em;
@@ -332,20 +422,20 @@ margin-bottom: 30px;
 .img-responsive:hover{
 	transform: scaleX(-1);
 }
-
+*/
 h2{
 	font-weight:800;
 	position:relative;	
 	font-size:50px;	
 	
 }
-/* 36e3c7 */
+
 h2:before{
 	content:attr(REFL-TEXT);	
 	position:absolute;
 	bottom:10%;	
 	transform: rotateX(180);
-	line-height:10px;	
+	line-height:50px;	
 	transform-origin:bottom;
 	background:linear-gradient(to top, #fff, transparent);
 	-webkit-background-clip:text;
@@ -379,8 +469,8 @@ h2:before{
                         <div class="hero-content">
                             <!-- <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4> -->                            
                             <!-- <img src="{{asset('images/logo.png')}}"class="wow fadeIn"style="height:200px;width:500px;box-shadow:2px 2px 2px 2px"/> -->
-							<div class="img-wrapper" style="margin-top:250px;margin-right:650px;">
-								<h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px 5px #dae2e3;color:#4c6792"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:rgba(40,215,226)">IT</span>Grow</h1>
+							<div class="img-wrapper" style="margin-top:250px;margin-right:150px;">
+								<h1 class="hero-lead wow slideInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px 5px #dae2e3;color:#4c6792"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:rgba(40,215,226)">IT</span>Grow</h1>
 								
 								<!-- <img src="{{asset('images/logo.png')}}" alt='' style="margin-bottom:600px;margin-left:500px;"> -->
 							</div>   
@@ -445,7 +535,7 @@ h2:before{
 						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
 							<h2 REFL-TEXT="About">About</h2>						
 						</div>
-						<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">					
+						<div class="content wow slideInRight" data-wow-delay=".1s" data-wow-duration="1s">					
 										
 							<div class="entry-content">
 								<div class="excerpt">
@@ -462,7 +552,7 @@ h2:before{
 				<div class="zerogrid-fluid">
 					<div class="wrap-box">									
 						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
-							<h2 REFL-TEXT="Our Services" >Our Services</h2>
+							<h2 REFL-TEXT="Our Services" style="margin-bottom:40px;">Our Services</h2>
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
 						</div>
 							<div class="content wow slideInLeft" data-wow-delay=".1s" data-wow-duration="1s">
@@ -474,7 +564,7 @@ h2:before{
 											</div>
 											<div class="right" style="background: url('/images/webDevelopment.jpg') 320px 450px;">
 												<h1 style="color:white;margin:20px;font-size:28px;font-weight:bolder">Web Development</h1>											
-												<button><a href="#about" style="text-decoration:none;cursor:pointer;color:black">Read More</button>
+												<button><a href="#about" style="text-decoration:none;cursor:pointer;color:black">Read More</a></button>
 											</div>
 										</div>
 										
@@ -486,7 +576,7 @@ h2:before{
 											</div>
 											<div class="right" style="background: url('/images/webDesign.jpg') 320px 450px;">
 												<h1 style="color:white;margin:20px;font-size:28px;font-weight:bolder">Web Design</h1>											
-												<button><a href="#about" style="text-decoration:none;cursor:pointer;color:black">Read More</button>
+												<button><a href="#about" style="text-decoration:none;cursor:pointer;color:black">Read More</acosh></button>
 											</div>
 										</div>
 										<!-- <div class="img-wrapper">
@@ -501,7 +591,7 @@ h2:before{
 											</div>
 											<div class="right" style="background: url('/images/mobileApplication.jpg') 320px 450px;">
 												<h1 style="color:white;margin:20px;font-size:28px;font-weight:bolder">Mobile Application</h1>											
-												<button><a href="#about" style="text-decoration:none;cursor:pointer;color:black">Read More</button>
+												<button><a href="#about" style="text-decoration:none;cursor:pointer;color:black">Read More</a></button>
 											</div>
 										</div>
 										<!-- <div class="img-wrapper">
@@ -514,15 +604,17 @@ h2:before{
 						
 							</div> 
 						</div> 						
-					</div>					
+					</div>	
+			</section>	
+								
 				
 			
-			<section class="content-box box-3 box-style-1 spacer" id="team">
-			<!-- <div class="skew-c"></div> -->
+			<!-- <section class="content-box box-3 box-style-1 spacer" id="team">
+			 <div class="skew-c"></div> 
 				<div class="zerogrid-fluid">
 					<div class="wrap-box">
 						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
-							<h2 REFL-TEXT="Our Team">Our Team</h2>
+							<h2 REFL-TEXT="Our Team" style="margin-bottom:40px;">Our Team</h2>
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
 						</div>									
 						<div class="testimonial-section">
@@ -548,9 +640,9 @@ h2:before{
 						</div>
 						<div class="user-saying">
 							<div class="swiper-container testimonial">
-									<!-- Additional required wrapper -->
+									 Additional required wrapper 
 								<div class="swiper-wrapper ">
-									<!-- Slides -->
+									 Slides 
 									<div class="swiper-slide">
 										<div class="quote">
 												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
@@ -607,13 +699,125 @@ h2:before{
 										</div>
 									</div>   
 								</div>
-								<!-- If we need pagination -->
+								 If we need pagination
 								<div class="swiper-pagination swiper-pagination-white"></div>
 							</div>
 						</div>													
 					</div>
 				</div>
-			</section>		
+			</section> -->
+			<section class="content-box box-3 box-style-1" id="team">	
+				<div class="zerogrid">
+					<div class="wrap-box"><!--Start Box-->
+						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+							<h2 REFL-TEXT="Our Team">Our Team</h2>						
+						</div>
+						<div class="content wow slideInRight" data-wow-delay=".1s" data-wow-duration="1s">					
+							<div class="container">
+								<div class="row">
+									<div class="col-md-4 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<h3 class="title">Sandeep Bajracharya</h3>
+												<span class="post">Software Developer</span>												
+												<img src="{{asset('images/sandeep.jpg')}}">
+											</div>
+											
+											<!-- <ul class="social">
+												<li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li>
+												<li><a href="#" class="fa fa-google-plus"></a></li>
+												<li><a href="#" class="fa fa-linkedin"></a></li>
+											</ul> -->
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<h3 class="title">Bivisha Karki</h3>
+												<span class="post">Software Developer</span>												
+												<img src="{{asset('images/bivisha.jpg')}}">
+											</div>
+											
+											<!-- <ul class="social">
+												<li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li>
+												<li><a href="#" class="fa fa-google-plus"></a></li>
+												<li><a href="#" class="fa fa-linkedin"></a></li>
+											</ul> -->
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<h3 class="title">Williamson</h3>
+												<span class="post">Web Developer</span>												
+												<img src="{{asset('images/webDevelopment.jpg')}}">
+											</div>
+											
+											<!-- <ul class="social">
+												<li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li>
+												<li><a href="#" class="fa fa-google-plus"></a></li>
+												<li><a href="#" class="fa fa-linkedin"></a></li>
+											</ul> -->
+										</div>
+									</div>		
+									<div class="col-md-4 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<h3 class="title">Williamson</h3>
+												<span class="post">Web Developer</span>												
+												<img src="{{asset('images/webDevelopment.jpg')}}">
+											</div>
+											
+											<!-- <ul class="social">
+												<li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li>
+												<li><a href="#" class="fa fa-google-plus"></a></li>
+												<li><a href="#" class="fa fa-linkedin"></a></li>
+											</ul> -->
+										</div>
+									</div>	
+									<div class="col-md-4 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<h3 class="title">Williamson</h3>
+												<span class="post">Web Developer</span>												
+												<img src="{{asset('images/webDevelopment.jpg')}}">
+											</div>
+											
+											<!-- <ul class="social">
+												<li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li>
+												<li><a href="#" class="fa fa-google-plus"></a></li>
+												<li><a href="#" class="fa fa-linkedin"></a></li>
+											</ul> -->
+										</div>
+									</div>	
+									<div class="col-md-4 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<h3 class="title">Williamson</h3>
+												<span class="post">Web Developer</span>												
+												<img src="{{asset('images/webDevelopment.jpg')}}">
+											</div>
+											
+											<!-- <ul class="social">
+												<li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li>
+												<li><a href="#" class="fa fa-google-plus"></a></li>
+												<li><a href="#" class="fa fa-linkedin"></a></li>
+											</ul> -->
+										</div>
+									</div>							
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
 
 			<!-----------------content-box-7-------------------->
 			<section class="content-box box-7">				
@@ -661,13 +865,13 @@ h2:before{
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
 			</section>
 		</div>
 	</section>
+		
 
 
     @include('partials.footer')
