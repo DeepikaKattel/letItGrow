@@ -94,6 +94,17 @@
     padding-bottom: 20px;
     text-align: center;
     display:inline-block;
+	filter: blur(4px);
+  	-webkit-filter: blur(4px);	 
+	}
+
+.our-team:hover{
+    padding-bottom: 20px;
+    text-align: center;
+    display:inline-block;
+	filter: blur(0px);
+  	-webkit-filter: blur(0px);
+	
 }
 .our-team .pic{
     display: inline-block;
@@ -124,7 +135,7 @@
 }
 .our-team .title{
     display: block;
-    font-size: 20px;
+    font-size:15px;
     font-weight: 700;
     color: black;
     letter-spacing: 1px;
@@ -132,10 +143,11 @@
 }
 .our-team .post{
     display: block;
-    font-size: 15px;
+    font-size: 11px;
     color: black;
     text-transform: capitalize;
     margin-bottom: 10px;
+	margin-right:5px;
     position: relative;
 }
 .our-team .post:after{
@@ -718,6 +730,71 @@ h2:before{
 									<div class="col-md-4 col-sm-6">
 										<div class="our-team">
 											<div class="pic">
+												<h3 class="title">Tribhuwan Kushwaha</h3>
+												<span class="post">Software Consultant</span>												
+												<img src="{{asset('images/tribhuwan.png')}}">
+											</div>
+											
+											<!-- <ul class="social">
+												<li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li>
+												<li><a href="#" class="fa fa-google-plus"></a></li>
+												<li><a href="#" class="fa fa-linkedin"></a></li>
+											</ul> -->
+										</div>
+									</div>	
+									<div class="col-md-4 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<h3 class="title">Salabh Adhikari</h3>
+												<span class="post">Application Developer</span>												
+												<img src="{{asset('images/salabh.png')}}">
+											</div>
+											
+											<!-- <ul class="social">
+												<li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li>
+												<li><a href="#" class="fa fa-google-plus"></a></li>
+												<li><a href="#" class="fa fa-linkedin"></a></li>
+											</ul> -->
+										</div>
+									</div>	
+									<div class="col-md-4 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<h3 class="title">Prashant Thapa</h3>
+												<span class="post">Web Designer</span>												
+												<img src="{{asset('images/prashant.png')}}">
+											</div>
+											
+											<!-- <ul class="social">
+												<li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li>
+												<li><a href="#" class="fa fa-google-plus"></a></li>
+												<li><a href="#" class="fa fa-linkedin"></a></li>
+											</ul> -->
+										</div>
+									</div>			
+									<div class="col-md-4 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<h3 class="title">Deepika Kattel</h3>
+												<span class="post">Software Developer</span>												
+												<img src="{{asset('images/webDevelopment.jpg')}}">
+											</div>
+											
+											<!-- <ul class="social">
+												<li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li>
+												<li><a href="#" class="fa fa-google-plus"></a></li>
+												<li><a href="#" class="fa fa-linkedin"></a></li>
+											</ul> -->
+										</div>
+									</div>	
+									
+									<div class="col-md-4 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
 												<h3 class="title">Sandeep Bajracharya</h3>
 												<span class="post">Software Developer</span>												
 												<img src="{{asset('images/sandeep.jpg')}}">
@@ -747,70 +824,9 @@ h2:before{
 											</ul> -->
 										</div>
 									</div>
-									<div class="col-md-4 col-sm-6">
-										<div class="our-team">
-											<div class="pic">
-												<h3 class="title">Williamson</h3>
-												<span class="post">Web Developer</span>												
-												<img src="{{asset('images/webDevelopment.jpg')}}">
-											</div>
-											
-											<!-- <ul class="social">
-												<li><a href="#" class="fa fa-facebook"></a></li>
-												<li><a href="#" class="fa fa-twitter"></a></li>
-												<li><a href="#" class="fa fa-google-plus"></a></li>
-												<li><a href="#" class="fa fa-linkedin"></a></li>
-											</ul> -->
-										</div>
-									</div>		
-									<div class="col-md-4 col-sm-6">
-										<div class="our-team">
-											<div class="pic">
-												<h3 class="title">Williamson</h3>
-												<span class="post">Web Developer</span>												
-												<img src="{{asset('images/webDevelopment.jpg')}}">
-											</div>
-											
-											<!-- <ul class="social">
-												<li><a href="#" class="fa fa-facebook"></a></li>
-												<li><a href="#" class="fa fa-twitter"></a></li>
-												<li><a href="#" class="fa fa-google-plus"></a></li>
-												<li><a href="#" class="fa fa-linkedin"></a></li>
-											</ul> -->
-										</div>
-									</div>	
-									<div class="col-md-4 col-sm-6">
-										<div class="our-team">
-											<div class="pic">
-												<h3 class="title">Williamson</h3>
-												<span class="post">Web Developer</span>												
-												<img src="{{asset('images/webDevelopment.jpg')}}">
-											</div>
-											
-											<!-- <ul class="social">
-												<li><a href="#" class="fa fa-facebook"></a></li>
-												<li><a href="#" class="fa fa-twitter"></a></li>
-												<li><a href="#" class="fa fa-google-plus"></a></li>
-												<li><a href="#" class="fa fa-linkedin"></a></li>
-											</ul> -->
-										</div>
-									</div>	
-									<div class="col-md-4 col-sm-6">
-										<div class="our-team">
-											<div class="pic">
-												<h3 class="title">Williamson</h3>
-												<span class="post">Web Developer</span>												
-												<img src="{{asset('images/webDevelopment.jpg')}}">
-											</div>
-											
-											<!-- <ul class="social">
-												<li><a href="#" class="fa fa-facebook"></a></li>
-												<li><a href="#" class="fa fa-twitter"></a></li>
-												<li><a href="#" class="fa fa-google-plus"></a></li>
-												<li><a href="#" class="fa fa-linkedin"></a></li>
-											</ul> -->
-										</div>
-									</div>							
+										
+									
+													
 								</div>
 							</div>
 						</div>
@@ -940,7 +956,20 @@ var galleryTop = new Swiper('.swiper-container.testimonial', {
   });
   
   </script>  
+<script>
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			var scroll = $(window).scrollTop();
+			if (scroll > 300) {
+				$(".navbar").css("background" , "grey");
+			}
 
+			else if(scroll < 300){
+				$(".navbar").css("background" , "transparent");  	
+			}
+		})
+	})
+	</script>
 </div>
 </body>
 </html>
