@@ -90,7 +90,24 @@
         }); 
     </script> 
     <style>
-		.our-team{
+.app {
+  display: table;
+  margin: 0 auto;
+}
+
+.app .row {
+    margin-bottom: 20px;
+    display:flex; /* added */
+    justify-content:center; /* added */
+}
+
+.node {
+    display: inline-block;
+    text-align: center;   
+    
+}
+
+.our-team{
     padding-bottom: 20px;
     text-align: center;
     display:inline-block;
@@ -457,7 +474,7 @@ h2:before{
 	margin-bottom:10px;
 }
 #about h2:before{
-	right:40%;
+	right:40%;	
 }
 #services h2:before{
 	right:32%;
@@ -482,7 +499,7 @@ h2:before{
                             <!-- <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4> -->                            
                             <!-- <img src="{{asset('images/logo.png')}}"class="wow fadeIn"style="height:200px;width:500px;box-shadow:2px 2px 2px 2px"/> -->
 							<div class="img-wrapper" style="margin-top:250px;margin-right:150px;">
-								<h1 class="hero-lead wow slideInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px 5px #dae2e3;color:#4c6792"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:rgba(40,215,226)">IT</span>Grow</h1>
+								<h1 class="hero-lead wow slideInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px 5px #dae2e3;color:#116466"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:white">IT</span>Grow</h1>
 								
 								<!-- <img src="{{asset('images/logo.png')}}" alt='' style="margin-bottom:600px;margin-left:500px;"> -->
 							</div>   
@@ -725,10 +742,10 @@ h2:before{
 							<h2 REFL-TEXT="Our Team">Our Team</h2>						
 						</div>
 						<div class="content wow slideInRight" data-wow-delay=".1s" data-wow-duration="1s">					
-							<div class="container">
+							<div class="container app">
 								<div class="row">
 									<div class="col-md-4 col-sm-6">
-										<div class="our-team">
+										<div class="our-team node">
 											<div class="pic">
 												<h3 class="title">Tribhuwan Kushwaha</h3>
 												<span class="post">Software Consultant</span>												
@@ -742,9 +759,11 @@ h2:before{
 												<li><a href="#" class="fa fa-linkedin"></a></li>
 											</ul> -->
 										</div>
-									</div>	
+									</div>
+								</div>	
+								<div class="row">
 									<div class="col-md-4 col-sm-6">
-										<div class="our-team">
+										<div class="our-team node">
 											<div class="pic">
 												<h3 class="title">Salabh Adhikari</h3>
 												<span class="post">Application Developer</span>												
@@ -759,8 +778,9 @@ h2:before{
 											</ul> -->
 										</div>
 									</div>	
+								
 									<div class="col-md-4 col-sm-6">
-										<div class="our-team">
+										<div class="our-team node">
 											<div class="pic">
 												<h3 class="title">Prashant Thapa</h3>
 												<span class="post">Web Designer</span>												
@@ -774,7 +794,9 @@ h2:before{
 												<li><a href="#" class="fa fa-linkedin"></a></li>
 											</ul> -->
 										</div>
-									</div>			
+									</div>	
+								</div>
+								<div class="row">		
 									<div class="col-md-4 col-sm-6">
 										<div class="our-team">
 											<div class="pic">
@@ -824,7 +846,22 @@ h2:before{
 											</ul> -->
 										</div>
 									</div>
-										
+									<div class="col-md-4 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<h3 class="title">Nikesh Shrestha</h3>
+												<span class="post">Software Developer</span>												
+												<img src="{{asset('images/sandeep.jpg')}}">
+											</div>
+											
+											<!-- <ul class="social">
+												<li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li>
+												<li><a href="#" class="fa fa-google-plus"></a></li>
+												<li><a href="#" class="fa fa-linkedin"></a></li>
+											</ul> -->
+										</div>
+									</div>					
 									
 													
 								</div>
@@ -961,7 +998,7 @@ var galleryTop = new Swiper('.swiper-container.testimonial', {
 		$(window).scroll(function(){
 			var scroll = $(window).scrollTop();
 			if (scroll > 300) {
-				$(".navbar").css("background" , "grey");
+				$(".navbar").css("background" , "#116466");
 			}
 
 			else if(scroll < 300){

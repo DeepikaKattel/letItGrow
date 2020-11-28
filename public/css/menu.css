@@ -39,7 +39,7 @@
 }
 #cssmenu {
     font-family: Montserrat, sans-serif;
-    background: #4c6792;
+    background: #116466;
 }
 #cssmenu > ul > li {
     float: left;
@@ -145,7 +145,7 @@
     text-decoration: none;
     color: #dddddd;
     font-weight: 400;
-    background: #4c6792;
+    background: #116466;
 }
 #cssmenu ul ul li:last-child > a,
 #cssmenu ul ul li.last-item > a {

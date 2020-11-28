@@ -238,7 +238,7 @@ h6 {
     letter-spacing: 2.5px;
     font-weight: 500;
     line-height: 1.1;
-    color: #4c6792;
+    color: black;
 }
 header h1 {
     color: white;
@@ -459,7 +459,7 @@ header .wrap-header {
 }
 .main-header .h-alt {
     margin-bottom: 20px;
-    color: rgba(40, 215, 226);
+    color: white;
     font-weight: 400;
     font-size: 1.3em;
     letter-spacing: 3px;
@@ -562,6 +562,18 @@ header .wrap-header {
 body {
     overflow-x: hidden;
 }
+@media (max-width: 400px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+}
 #page-content {
     position: relative;
     overflow: hidden;
@@ -591,7 +603,7 @@ body {
 .content-box .header h2 {
     font-size: 1.5em;
     letter-spacing: 4px;
-    color: #4c6792;
+    color: #116466;
 }
 
 .content-box .header .wrapper {
@@ -910,7 +922,7 @@ body {
     font-size: 24px;
     height: 65px;
     width: 65px;
-    background: rgba(40, 215, 226);
+    background: #116466;
     color: #fff;
     border-radius: 50%;
     margin: 0 20px 30px 0;
@@ -919,9 +931,9 @@ body {
     transition: 0.3s;
 }
 .content-box.box-7 i.fa:hover {
-    color: #4c6792;
+    color: black;
     background: white;
-    border: 2px solid #4c6792;
+    border: 2px solid black;
     transform: translate(0, -10px);
     -webkit-transform: rotateZ(720deg);
     -moz-transform: rotateZ(720deg);
@@ -937,6 +949,8 @@ body {
     .content-box.box-7 {
         float: none;
         margin-top: 10px;
+        display: inline-block;
+        vertical-align: top;
     }
 }
 
@@ -1053,7 +1067,7 @@ footer#page-footer {
     display: block;
 }
 footer a {
-    color: #4c6792;
+    color: #116466;
     font-weight: bold;
     text-shadow: none;
 }
@@ -1128,7 +1142,7 @@ footer .bottom-footer {
     color: white;
     text-align: center;
     padding: 40px 0;
-    border-top: 3px solid #4c6792;
+    border-top: 3px solid #116466;
 }
 footer .bottom-footer ul li {
     margin-bottom: 5px;
@@ -1150,7 +1164,7 @@ footer .bottom-social i.fa {
 }
 
 .copyright {
-    color: rgba(40, 215, 226);
+    color: #116466;
 }
 
 @media all and (max-width: 767px) {
@@ -1335,12 +1349,12 @@ footer .bottom-social i.fa {
     height: 42px;
     width: 42px;
     padding: 7px 0 0;
-    border: 2px solid rgba(40, 215, 226);
+    border: 2px solid #116466;
     margin: 0;
-    color: rgba(40, 215, 226);
+    color: #116466;
 }
 .button-toTop:hover {
-    background: rgba(40, 215, 226);
+    background: #116466;
     color: #fff;
 }
 
@@ -1492,7 +1506,7 @@ footer .bottom-social i.fa {
 .crumbs ul li a {
     display: block;
     float: left;
-    background: #4c6792;
+    background: #116466;
     text-align: center;
     padding: 7px 30px 8px 40px;
     position: relative;
@@ -1505,7 +1519,7 @@ footer .bottom-social i.fa {
     content: "";
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-left: 20px solid #4c6792;
+    border-left: 20px solid #116466;
     position: absolute;
     right: -20px;
     top: 0;
@@ -1615,27 +1629,33 @@ footer .bottom-social i.fa {
 
 @media (max-width: 992px) {
     .wrap-container img {
-        height: 300px;
+        display: inline-block;
+        vertical-align: top;
     }
     #services {
-        height: 500px;
+        display: inline-block;
+        vertical-align: top;
     }
 }
 @media (max-width: 767px) {
     .wrap-container img {
-        height: 220px;
+        display: inline-block;
+        vertical-align: top;
     }
     #services {
-        height: 300px;
+        display: inline-block;
+        vertical-align: top;
     }
 }
 
 @media (max-width: 400px) {
     .wrap-container img {
-        height: 80px;
+        display: inline-block;
+        vertical-align: top;
     }
     #services {
-        height: auto;
+        display: inline-block;
+        vertical-align: top;
     }
 }
 /* card flip */
@@ -1778,6 +1798,8 @@ button:hover {
 @media only screen and (max-width: 600px) {
     body {
         transform: scale(0.67);
+        display: inline-block;
+        vertical-align: top;
     }
 }
 
