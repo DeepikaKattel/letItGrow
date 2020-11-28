@@ -1178,6 +1178,11 @@ footer .bottom-social i.fa {
         margin-bottom: 40px;
     }
 }
+/* @media all and (max-width: 400px) {
+    footer#page-footer {
+        position: absolute;
+    }
+} */
 
 /* ---------------------------------------------------------------------------- */
 /* --------------------------------Contact-Area-------------------------------- */

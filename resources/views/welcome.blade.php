@@ -14,7 +14,7 @@
 
     <!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=0.4">
 
     <!-- CSS
   ================================================== -->
@@ -89,7 +89,9 @@
             }) 
         }); 
     </script> 
-    <style>
+
+
+<style>
 .app {
   display: table;
   margin: 0 auto;
@@ -109,18 +111,18 @@
 
 .our-team{
     padding-bottom: 20px;
+	width:100%;
     text-align: center;
     display:inline-block;
-	filter: blur(4px);
-  	-webkit-filter: blur(4px);	 
-	}
+    filter: grayscale(100%);	 
+}
 
 .our-team:hover{
     padding-bottom: 20px;
     text-align: center;
     display:inline-block;
-	filter: blur(0px);
-  	-webkit-filter: blur(0px);
+    filter: grayscale(0%);
+    
 	
 }
 .our-team .pic{
@@ -473,6 +475,32 @@ h2:before{
 	opacity:0.4;
 	margin-bottom:10px;
 }
+
+@media only screen and (max-width: 767px){
+    .our-team{ overflow: hidden; padding-right:20px; }
+	#about h2:before{
+		left:100px;	
+	}
+	#services h2:before{
+		left:60px;
+	}
+	#team h2:before{
+		left:100px;
+	}
+}
+@media only screen and (max-width: 400px){
+    .our-team{ overflow: hidden; padding-right:20px;}
+	#about h2:before{
+		left:50px;	
+	}
+	#services h2:before{
+		left:15px;
+	}
+	#team h2:before{
+		left:70px;
+	}
+}
+
 #about h2:before{
 	right:40%;	
 }
@@ -749,7 +777,7 @@ h2:before{
 											<div class="pic">
 												<h3 class="title">Tribhuwan Kushwaha</h3>
 												<span class="post">Software Consultant</span>												
-												<img src="{{asset('images/tribhuwan.png')}}">
+												<img src="{{asset('images/tribhuwan.PNG')}}">
 											</div>
 											
 											<!-- <ul class="social">
@@ -760,14 +788,14 @@ h2:before{
 											</ul> -->
 										</div>
 									</div>
-								</div>	
-								<div class="row">
+									
+								
 									<div class="col-md-4 col-sm-6">
 										<div class="our-team node">
 											<div class="pic">
 												<h3 class="title">Salabh Adhikari</h3>
 												<span class="post">Application Developer</span>												
-												<img src="{{asset('images/salabh.png')}}">
+												<img src="{{asset('images/salabh.PNG')}}">
 											</div>
 											
 											<!-- <ul class="social">
@@ -784,7 +812,7 @@ h2:before{
 											<div class="pic">
 												<h3 class="title">Prashant Thapa</h3>
 												<span class="post">Web Designer</span>												
-												<img src="{{asset('images/prashant.png')}}">
+												<img src="{{asset('images/prashant.PNG')}}">
 											</div>
 											
 											<!-- <ul class="social">
@@ -802,7 +830,7 @@ h2:before{
 											<div class="pic">
 												<h3 class="title">Deepika Kattel</h3>
 												<span class="post">Software Developer</span>												
-												<img src="{{asset('images/webDevelopment.jpg')}}">
+												<img src="{{asset('images/deepika.jpg')}}">
 											</div>
 											
 											<!-- <ul class="social">
@@ -877,47 +905,47 @@ h2:before{
 				<div class="zerogrid-fluid">
 					<div class="wrap-box"><!--Start Box-->
 						<div class="content wow fadeInLeft" data-wow-delay=".1s" data-wow-duration="1s">
-							<div class="row">
-								<div class="md-1-3">
-									<div class="wrap-col">
-										<div class="row">
-											<div class="sm-1-3">
-												<i class="fa fa-map-marker"></i>
-											</div>
-											<div class="sm-2-3 t-left-sm">
-												<h3>Address</h3>
-												<p>Pulchowk, Lalitpur</p>
-											</div>
+							
+							<div class="md-1-3">
+								<div class="wrap-col">
+									<div class="row">
+										<div class="sm-1-3">
+											<i class="fa fa-map-marker"></i>
 										</div>
-									</div>
-								</div>
-								<div class="md-1-3">
-									<div class="wrap-col">
-										<div class="row">
-											<div class="sm-1-3">
-												<i class="fa fa-phone"></i>
-											</div>
-											<div class="sm-2-3 t-left-sm">
-												<h3>Phone</h3>
-												<p>01-5901614</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="md-1-3">
-									<div class="wrap-col">
-										<div class="row">
-											<div class="sm-1-3">
-												<i class="fa fa-envelope"></i>
-											</div>
-											<div class="sm-2-3 t-left-sm">
-												<h3>Email</h3>
-												<p><span>Email One :</span> info@letitgrownepal.com </p>
-											</div>
+										<div class="sm-2-3 t-left-sm">
+											<h3>Address</h3>
+											<p>Pulchowk, Lalitpur</p>
 										</div>
 									</div>
 								</div>
 							</div>
+							<div class="md-1-3">
+								<div class="wrap-col">
+									<div class="row">
+										<div class="sm-1-3">
+											<i class="fa fa-phone"></i>
+										</div>
+										<div class="sm-2-3 t-left-sm">
+											<h3>Phone</h3>
+											<p>01-5901614</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="md-1-3">
+								<div class="wrap-col">
+									<div class="row">
+										<div class="sm-1-3">
+											<i class="fa fa-envelope"></i>
+										</div>
+										<div class="sm-2-3 t-left-sm">
+											<h3>Email</h3>
+											<p><span>Email One :</span> info@letitgrownepal.com </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
 						</div>
 					</div>
 				</div>
