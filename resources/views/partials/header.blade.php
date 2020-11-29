@@ -19,7 +19,7 @@
                  </li>
               </ul>
            </li>--}}
-           <li><a href="#about"><span>about</span></a></li>
+           <!-- <li><a href="#about"><span>about</span></a></li> -->
            <li><a href="{{route('career.index')}}"><span>Career</span></a></li>
            <!-- <li><a href="{{url('/')}}"><img src="{{asset('images/logo.png')}}" style="width:200px; height:100px;margin-bottom:30px;background:transparent"></a></li> -->
            <li><a href="{{route('vision')}}"><span>Vision</span></a></li>

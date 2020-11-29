@@ -4,7 +4,6 @@
 }
 #menu #cssmenu > ul > li > a {
     color: white;
-    margin-left: 70px;
 }
 
 #cssmenu,
@@ -40,9 +39,12 @@
 #cssmenu {
     font-family: Montserrat, sans-serif;
     background: #116466;
+    float: right;
+    right: 0%;
 }
 #cssmenu > ul > li {
-    float: left;
+    float: right;
+    right: 0%;
 }
 #cssmenu.align-center > ul {
     font-size: 0;
@@ -50,10 +52,10 @@
 }
 #cssmenu.align-center > ul > li {
     display: inline-block;
-    float: none;
+    float: right;
 }
 #cssmenu.align-center ul ul {
-    text-align: left;
+    text-align: right;
 }
 #cssmenu.align-right > ul > li {
     float: right;
@@ -62,8 +64,6 @@
     padding: 17px;
     font-size: 18px;
     letter-spacing: 1px;
-    margin-right: 20px;
-    margin-left: 10px;
     text-decoration: none;
     color: white;
     font-weight: 600;
@@ -78,7 +78,6 @@
 #cssmenu > ul > li.has-sub > a:after {
     position: absolute;
     top: 22px;
-    right: 11px;
     width: 8px;
     height: 2px;
     display: block;

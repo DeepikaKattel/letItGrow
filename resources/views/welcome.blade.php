@@ -113,15 +113,17 @@
     padding-bottom: 20px;
 	width:100%;
     text-align: center;
-    display:inline-block;
-    filter: grayscale(0%);	 
+	display:inline-block;
+	font-family:Tahoma, Geneva, sans-serif;
+	/* background:rgb(17, 100, 102, 0.6); */
+    /* filter: grayscale(0%);	  */
 }
 
 .our-team:hover{
     padding-bottom: 20px;
     text-align: center;
-    display:inline-block;
-    filter: grayscale(100%);
+	display:inline-block;	
+    /* filter: grayscale(100%); */
     
 	
 }
@@ -130,14 +132,14 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: white;
+    background: rgb(17, 100, 102, 0.4);
     padding: 70px 20px 30px;
     margin-bottom: 20px;
     position: relative;
 }
 .our-team .description{
     font-size: 14px;
-    color: #fff;
+    color: white;
 }
 .our-team .pic img{
     width: 101%;
@@ -149,21 +151,22 @@
     transition: all 0.6s ease 0s;
 }
 .our-team:hover .pic img{
-    transform: rotate(-120deg);
-    transform-origin: 95% 40% 0;
+    /* transform: rotate(-360deg); */
+    transform-origin: 105% 100% 0;
+	transform: rotateY(100deg);		
 }
 .our-team .title{
     display: block;
-    font-size:11px;
-    font-weight: 700;
-    color: black;
+	font-size:15px;	
+    font-weight: 800;
+    color: white;
     letter-spacing: 0.5px;
     margin-bottom: 5px;
 }
 .our-team .post{
     display: block;
-    font-size: 11px;
-    color: black;
+    font-size: 13px;
+    color: white;
     text-transform: capitalize;
     margin-bottom: 10px;
 	margin-right:5px;
@@ -518,6 +521,7 @@ h2:before{
 } 
 p{
 	font-family:system-ui;
+	line-height:30px;
 }
 
 
@@ -537,7 +541,7 @@ p{
                             <!-- <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4> -->                            
                             <!-- <img src="{{asset('images/logo.png')}}"class="wow fadeIn"style="height:200px;width:500px;box-shadow:2px 2px 2px 2px"/> -->
 							<div class="img-wrapper" style="margin-top:250px;margin-right:300px;">
-								<h1 class="hero-lead wow slideInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px 5px #dae2e3;color:#116466"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:white">IT</span>Grow</h1>
+								<h1 class="hero-lead wow slideInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px 5px #dae2e3;color:#116466;"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:white">IT</span>Grow</h1>
 								
 								<!-- <img src="{{asset('images/logo.png')}}" alt='' style="margin-bottom:600px;margin-left:500px;"> -->
 							</div>   
@@ -568,8 +572,8 @@ p{
                         
 					</div>
 					
-                    <div class="wave"> 					                       
-                    </div>
+                    <!-- <div class="wave"> 					                       
+                    </div> -->
                     <!---Scroller--->                    
                     <div id="scroll-page-content">
                         <a href="#menu" class="scroller">
@@ -578,8 +582,7 @@ p{
                                 <i class="fa fa-angle-double-down"></i>
                             </div>
                         </a>
-                    </div>           
-
+                    </div>
                
             </div>            
         </header>
@@ -602,13 +605,17 @@ p{
 						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
 							<h2 REFL-TEXT="About">About</h2>						
 						</div>
-						<div class="content wow slideInRight" data-wow-delay=".1s" data-wow-duration="1s">					
-										
-							<div class="entry-content">
-								<div class="excerpt">
-								<p>Let IT grow Pvt. Ltd. is a company growing in the field of information technology. The organization is a team of driven young and experienced minds that are passionate to provide utmost customer satisfaction in terms of product and service delivery.
-									The company mostly undertakes project-based business and primarily focuses on providing software-based services to its customers. However, it serves clients with system related services as well as other related needs. Apart from serving for commercial needs, Let IT grow also provides professional training to freshers/individuals and prepare them for the outer world exposure on the related field.
-								As the name suggests, we aim to maximize the market potential in IT by providing excellent products and services in the related field along with generating skillful manpower.</p>
+						<div class="row content " data-wow-delay=".1s" data-wow-duration="1s">					
+							<div class="col-4 wow slideInLeft">
+								<img src="{{asset('images/about.jpg')}}" style="width:100%;height:255px;">
+							</div>
+							<div class="col-8 wow slideInRight" style="padding-left:100px">		
+								<div class="entry-content">									
+									<div class="excerpt">
+									<p>Let IT grow Pvt. Ltd. is a company growing in the field of information technology. The organization is a team of driven young and experienced minds that are passionate to provide utmost customer satisfaction in terms of product and service delivery.
+										<br>The company mostly undertakes project-based business and primarily focuses on providing software-based services to its customers. However, it serves clients with system related services as well as other related needs. Apart from serving for commercial needs, Let IT grow also provides professional training to freshers/individuals and prepare them for the outer world exposure on the related field.
+									As the name suggests, we aim to maximize the market potential in IT by providing excellent products and services in the related field along with generating skillful manpower.</p>
+								</div>
 							</div>						
 								
 						</div>
@@ -778,13 +785,13 @@ p{
 						<div class="header wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
 							<h2 REFL-TEXT="Our Team">Our Team</h2>						
 						</div>
-						<div class="content wow slideInRight" data-wow-delay=".1s" data-wow-duration="1s">					
+						<div class="content" data-wow-delay=".1s" data-wow-duration="1s">					
 							<div class="container app">
 								<div class="row">
 									<div class="col-md-4 col-sm-6">
 										<div class="our-team node">
-											<div class="pic">
-												<h3 class="title">Tribhuwan Kushwaha</h3>
+											<div class="pic wow slideInRight">
+												<h3 class="title" >Tribhuwan Kushwaha</h3>
 												<span class="post">Software Consultant</span>												
 												<img src="{{asset('images/tribhuwan.PNG')}}">
 											</div>
@@ -801,7 +808,7 @@ p{
 								
 									<div class="col-md-4 col-sm-6">
 										<div class="our-team node">
-											<div class="pic">
+											<div class="pic wow slideInRight">
 												<h3 class="title">Salabh Adhikari</h3>
 												<span class="post">Application Developer</span>												
 												<img src="{{asset('images/salabh.PNG')}}">
@@ -818,7 +825,7 @@ p{
 								
 									<div class="col-md-4 col-sm-6">
 										<div class="our-team node">
-											<div class="pic">
+											<div class="pic wow slideInRight">
 												<h3 class="title">Prashant Thapa</h3>
 												<span class="post">Web Designer</span>												
 												<img src="{{asset('images/prashant.PNG')}}">
@@ -836,7 +843,7 @@ p{
 								<div class="row">		
 									<div class="col-md-4 col-sm-6">
 										<div class="our-team">
-											<div class="pic">
+											<div class="pic wow slideInRight">
 												<h3 class="title">Deepika Kattel</h3>
 												<span class="post">Software Developer</span>												
 												<img src="{{asset('images/deepika.jpg')}}">
@@ -853,7 +860,7 @@ p{
 									
 									<div class="col-md-4 col-sm-6">
 										<div class="our-team">
-											<div class="pic">
+											<div class="pic wow slideInRight">
 												<h3 class="title">Sandeep Bajracharya</h3>
 												<span class="post">Software Developer</span>												
 												<img src="{{asset('images/sandeep.jpg')}}">
@@ -869,7 +876,7 @@ p{
 									</div>
 									<div class="col-md-4 col-sm-6">
 										<div class="our-team">
-											<div class="pic">
+											<div class="pic wow slideInRight">
 												<h3 class="title">Bivisha Karki</h3>
 												<span class="post">Software Developer</span>												
 												<img src="{{asset('images/bivisha.jpg')}}">
@@ -885,10 +892,10 @@ p{
 									</div>
 									<div class="col-md-4 col-sm-6">
 										<div class="our-team">
-											<div class="pic">
+											<div class="pic wow slideInRight">
 												<h3 class="title">Nitesh Manandhar</h3>
 												<span class="post">Software Developer</span>												
-												<img src="{{asset('images/nitesh.JPG')}}">
+												<img src="{{asset('images/nitesh.jpg')}}">
 											</div>
 											
 											<!-- <ul class="social">
@@ -1035,7 +1042,7 @@ var galleryTop = new Swiper('.swiper-container.testimonial', {
 		$(window).scroll(function(){
 			var scroll = $(window).scrollTop();
 			if (scroll > 300) {
-				$(".navbar").css("background" , "#116466");
+				$(".navbar").css("background" , "rgb(17, 100, 102, 0.6)");
 			}
 
 			else if(scroll < 300){
