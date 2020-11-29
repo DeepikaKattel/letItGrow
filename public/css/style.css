@@ -384,7 +384,7 @@ body {
 }
 body {
     background: #fff;
-    font-family: "Montserrat", Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.2px;
@@ -1632,7 +1632,7 @@ footer .bottom-social i.fa {
     background: linear-gradient(to left bottom, #fff 49%, #f5f7f8 50%);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
     .wrap-container img {
         display: inline-block;
         vertical-align: top;
@@ -1671,8 +1671,6 @@ footer .bottom-social i.fa {
     height: 480px;
     perspective: 800px;
     position: relative;
-    left: 10%;
-    margin-right: 40px;
 }
 
 .wrapper .card {

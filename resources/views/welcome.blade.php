@@ -114,14 +114,14 @@
 	width:100%;
     text-align: center;
     display:inline-block;
-    filter: grayscale(100%);	 
+    filter: grayscale(0%);	 
 }
 
 .our-team:hover{
     padding-bottom: 20px;
     text-align: center;
     display:inline-block;
-    filter: grayscale(0%);
+    filter: grayscale(100%);
     
 	
 }
@@ -145,7 +145,7 @@
     border-radius: 50%;
     position: absolute;
     top: -1px;
-    left: -1px;
+    left: -40px;
     transition: all 0.6s ease 0s;
 }
 .our-team:hover .pic img{
@@ -154,10 +154,10 @@
 }
 .our-team .title{
     display: block;
-    font-size:15px;
+    font-size:11px;
     font-weight: 700;
     color: black;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     margin-bottom: 5px;
 }
 .our-team .post{
@@ -466,14 +466,20 @@ h2:before{
 	position:absolute;
 	bottom:10%;	
 	transform: rotateX(180);
-	line-height:50px;	
+	line-height:5px;	
 	transform-origin:bottom;
-	background:linear-gradient(to top, #fff, transparent);
+	background:linear-gradient(to top, #fff, transparent);	
 	-webkit-background-clip:text;
 	font-size:50px;
 	color:#dae2e3;
-	opacity:0.4;
+	opacity:0.25;
 	margin-bottom:10px;
+}
+@media only screen and (max-width: 1200px){
+	#services h2:before{
+		right:32%;
+		left:0%;
+	}
 }
 
 @media only screen and (max-width: 767px){
@@ -482,7 +488,7 @@ h2:before{
 		left:100px;	
 	}
 	#services h2:before{
-		left:60px;
+		left:40px;
 	}
 	#team h2:before{
 		left:100px;
@@ -505,11 +511,15 @@ h2:before{
 	right:40%;	
 }
 #services h2:before{
-	right:32%;
+	right:35%;
 }
 #team h2:before{
-	right:37%;
+	right:35%;
+} 
+p{
+	font-family:system-ui;
 }
+
 
 </style>
 </head>
@@ -526,7 +536,7 @@ h2:before{
                         <div class="hero-content">
                             <!-- <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" >We build designs from your imagination</h4> -->                            
                             <!-- <img src="{{asset('images/logo.png')}}"class="wow fadeIn"style="height:200px;width:500px;box-shadow:2px 2px 2px 2px"/> -->
-							<div class="img-wrapper" style="margin-top:250px;margin-right:150px;">
+							<div class="img-wrapper" style="margin-top:250px;margin-right:300px;">
 								<h1 class="hero-lead wow slideInLeft" data-wow-duration="1.5s" style="text-shadow:4px 5px 5px #dae2e3;color:#116466"> <canvas id="myCanvas" style="margin-top:0px"></canvas>Let <span style="color:white">IT</span>Grow</h1>
 								
 								<!-- <img src="{{asset('images/logo.png')}}" alt='' style="margin-bottom:600px;margin-left:500px;"> -->
@@ -534,7 +544,7 @@ h2:before{
                             
                             <!-- <a href="{{asset('about')}}" class="button button-skin wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Read More</a> -->
                         </div>
-                        </div>
+                    </div>
                         <!-- <canvas id="c"></canvas> -->
                         <!-- <div class="containerRobot">
 							<div class="robot">
@@ -613,7 +623,7 @@ h2:before{
 							<span class="intro">We help your business to step up a notch by making it tech-friendly</span>
 						</div>
 							<div class="content wow slideInLeft" data-wow-delay=".1s" data-wow-duration="1s">
-								<div class="row">								
+								<div class="row" style="justify-content:center">								
 									<div class="wrapper">
 										<div class="card" style="background: url('/images/webDevelopment.jpg') 320px 450px;">
 											<div class="front">
@@ -623,8 +633,7 @@ h2:before{
 												<h1 style="color:white;margin:20px;font-size:28px;font-weight:bolder">Web Development</h1>											
 												<button><a href="#about" style="text-decoration:none;cursor:pointer;color:black">Read More</a></button>
 											</div>
-										</div>
-										
+										</div>										
 									</div>
 									<div class="wrapper">
 										<div class="card" style="background: url('/images/webDesign.jpg') 320px 450px;">
@@ -877,9 +886,9 @@ h2:before{
 									<div class="col-md-4 col-sm-6">
 										<div class="our-team">
 											<div class="pic">
-												<h3 class="title">Nikesh Shrestha</h3>
+												<h3 class="title">Nitesh Manandhar</h3>
 												<span class="post">Software Developer</span>												
-												<img src="{{asset('images/sandeep.jpg')}}">
+												<img src="{{asset('images/nitesh.JPG')}}">
 											</div>
 											
 											<!-- <ul class="social">
